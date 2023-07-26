@@ -1,0 +1,38 @@
+:root {
+  /* Colors */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+/*
+  |============================
+  | Common styles
+  |============================
+*/
+body {
+}
+/* Base styles for mobile devices */
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+/* Tablet screen styles */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+/* Desktop screen styles */
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
