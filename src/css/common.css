@@ -1,5 +1,12 @@
 :root {
   /* Colors */
+  --bg-black-cl: #11131F;
+  --bg-dark-cl: #1F212D;
+  --light-grn-cl: #93ABAE;
+  --linear-grn-1cl: #BEC7C2;
+  --linear-grn-2cl: #A1B5BA;
+  --main-white-cl: #F6F5EF;
+  --btn-hover-cl: #88B3B9;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
