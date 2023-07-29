@@ -1,0 +1,240 @@
+.adventures {
+  min-width: 320px;
+  max-width: 767px;
+
+  padding: 0 20px;
+  background-color: #11131f;
+}
+
+@media only screen and (min-width: 768px) {
+  .adventures {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .adventures {
+    max-width: 1280px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .adventures-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+}
+
+.adventures-title {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  color: #a1b5ba;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+
+  margin: 0;
+
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 375px) {
+  .adventures-title {
+    width: 335px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .adventures-title {
+    font-size: 32px;
+    width: 497px;
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .adventures-title {
+    margin: 0;
+  }
+}
+
+.adventures-title-item {
+  color: var(--white, #f6f5ef);
+  font-style: normal;
+}
+
+@media only screen and (min-width: 375px) {
+  .adventures-title-item {
+    width: 335px;
+  }
+}
+
+@media only screen and (min-width: minwidthpx) {
+  .adventures-title-item {
+    width: 497px;
+  }
+}
+
+.adventures-text {
+  color: var(--white, #f6f5ef);
+
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+
+  margin: 0;
+
+  margin-bottom: 40px;
+}
+@media only screen and (min-width: 375px) {
+  .adventures-text {
+    width: 335px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .adventures-text {
+    font-size: 16px;
+    width: 274px;
+    margin-left: 431px;
+    margin-bottom: 64px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .adventures-text {
+    margin: 0;
+  }
+}
+
+.adventures-list {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .adventures-list {
+    display: flex;
+    gap: 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .adventures-list {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+.adventures-list-item {
+  padding: 24px 14px;
+  border-radius: 24px;
+
+  background-color: #1f212d;
+}
+
+@media only screen and (min-width: 375px) {
+  .adventures-list-item {
+    width: 335px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .adventures-list-item {
+    width: 344px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .adventures-list-item {
+    width: 384px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279.98) {
+  .adventures-list-item {
+    padding: 24px 12px;
+    flex-basis: calc((100% - 16px) / 2);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .adventures-list-item {
+    padding: 32px 32px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .adventures-list-item:nth-last-child(-n + 2) {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .adventures-list-item:nth-last-child(-n + 1) {
+    display: none;
+  }
+}
+
+.adventures-list-item-title {
+  color: var(--white, #f6f5ef);
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .adventures-list-item-title {
+    font-size: 18px;
+    margin-top: 24px;
+  }
+}
+.adventures-list-item-text {
+  color: rgba(246, 245, 239, 0.5);
+  text-align: center;
+
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+
+  padding: 0 3.5px;
+
+  width: 100%;
+}
+
+@media only screen and (min-width: 375px) {
+  .adventures-list-item-text {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .adventures-list-item-text {
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .adventures-list-item-text {
+    font-size: 16px;
+    padding: 0;
+  }
+}
