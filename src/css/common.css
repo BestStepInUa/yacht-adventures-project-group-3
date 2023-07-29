@@ -1,15 +1,12 @@
 :root {
   /* Colors */
-
-  /* Colors */
-  --bg-black-cl: #11131f;
-  --bg-dark-cl: #1f212d;
+  --black-cl: #11131f;
+  --dark-cl: #1f212d;
   --light-grn-cl: #93abae;
-  --main-white-cl: #f6f5ef;
-  --btn-hover-cl: #88b3b9;
-  --grey-text-cl: rgba(246, 245, 239, 0.5);
-
-  --linear-green: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
+  --white-cl: #f6f5ef;
+  --hover-cl: #88b3b9;
+  --grey-cl: rgba(246, 245, 239, 0.5);
+  --linear-gradient: linear-gradient(#bec7c2 0%, #a1b5ba 100%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,6 +20,11 @@
   |============================
 */
 body {
+  background-color: var(black-cl);
+  color: var(--white-cl);
+  font-weight: normal;
+  font-size: 16px;
+  font-family: 'DM Sans', sans-serif;
 }
 /* Base styles for mobile devices */
 .container {
