@@ -1,0 +1,28 @@
+.servicesblock-bg {
+    background-color: var(--bg-black-cl);
+}
+
+.servicesblock-list {
+        flex-wrap: wrap;
+            justify-content: center;
+            display: flex;
+            gap: 64px;
+                align-items: baseline;
+}
+
+.services-block {
+    padding: 32px;
+}
+
+.store-imge {
+    display: block;
+    position: absolute;
+    border-radius: 414px;
+    opacity: 0.6000000238418579;
+    background: #91AFBA;
+    filter: blur(100px);
+    width: 414px;
+    height: 414px;
+    transform: rotate(-45.074deg);
+    flex-shrink: 0;
+}
