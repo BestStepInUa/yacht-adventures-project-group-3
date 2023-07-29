@@ -1,34 +1,4 @@
 .section {
-<<<<<<< Updated upstream
-}
-.yb-container {
-}
-.yb-main-info {
-}
-.yb-title {
-}
-.yb-button {
-}
-.yb-card {
-}
-.yb-img {
-}
-.yaht-info {
-}
-.yaht-name {
-}
-.yaht-class {
-}
-.yb-list {
-}
-.list {
-}
-.yb-item {
-}
-.yaht-datum {
-}
-.yaht-datum-description {
-=======
   background-color: var(--bg-black-cl);
 }
 
@@ -74,7 +44,7 @@
   border-radius: 24px;
   margin-bottom: 24px;
   padding: 24px;
-  gap:24px;
+  gap: 24px;
 }
 .yb-img {
   width: 299px;
@@ -87,8 +57,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: baseline;
- justify-content: space-between;
-  
+  justify-content: space-between;
 }
 .yaht-name {
   color: var(--main-white-cl);
@@ -96,7 +65,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.2; 
+  line-height: 1.2;
   letter-spacing: -0.045em;
   text-transform: uppercase;
 }
@@ -106,45 +75,51 @@
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.18; 
+  line-height: 1.18;
   letter-spacing: 0.0225em;
   text-transform: uppercase;
   opacity: 0.5;
 }
 
-
-.yaht-characteristics{
-    display: flex;
-   column-gap: 32px;
+.yaht-characteristics {
+  display: flex;
+  column-gap: 32px;
 }
 
 .yb-list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 6px;
-
-}
-.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
 }
 
 .yaht-item,
 .yaht-item-description {
-color: var(--main-white-cl);
-font-family: DM Sans;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 1.18; 
-letter-spacing: 0.026em;
-text-transform: uppercase;
+  color: var(--main-white-cl);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.026em;
+  text-transform: uppercase;
 }
-.yaht-datum-description {
-    text-transform: none;
->>>>>>> Stashed changes
+.yaht-item-description {
+  text-transform: none;
+}
+
+.swipe-wrapper {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin-bottom: 80px;
 }
 .yb-swipe-btn {
+  width: 46px;
+  height: 36px;
+  border-radius: 60px;
+  border: 1px solid var(--main-white-cl);
+  background-color: inherit;
 }
-.btn {
-}
+
 .swipe-svg {
 }
