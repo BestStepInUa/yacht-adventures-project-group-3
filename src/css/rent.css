@@ -1,0 +1,272 @@
+:root {
+  /* Colors */
+  --black-cl: #11131f;
+  --dark-cl: #1f212d;
+  --light-grn-cl: #93abae;
+  --white-cl: #f6f5ef;
+  --hover-cl: #88b3b9;
+  --grey-cl: rgba(246, 245, 239, 0.5);
+  --linear-gradient: linear-gradient(#bec7c2 0%, #a1b5ba 100%);
+  /* The main number of elements in Flexbox grid */
+  --items: 3;
+  /* The main gap indent in Flexbox grid */
+  --indent: 16px;
+  /* Transition settings */
+  --main-transition-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+@media only screen and (min-width: 320px) {
+  .container {
+    min-width: 320px;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 20px;
+    outline: 2px solid red;
+    outline-offset: -2px;
+  }
+  .rent-yacht-heading {
+    color: var(--white, #f6f5ef);
+    font-family: DM Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 39.6px */
+    letter-spacing: -1.62px;
+    margin-bottom: 16px;
+  }
+  .rent-yacht-form-container,
+  .rent-yacht-textarea-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .rent-yacht-input {
+    background-color: inherit;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid var(--white-cl);
+    width: 335px;
+    height: 35px;
+    color: var(--white-cl);
+  }
+  .rent-yacht-textarea {
+    background-color: inherit;
+    width: 335px;
+    height: 77px;
+    resize: none;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid var(--white-cl);
+    color: var(--white-cl);
+  }
+  .rent-yacht-send-button {
+    width: 132px;
+    height: 48px;
+    display: flex;
+    padding: 14px 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    border: 1px solid var(--white-cl);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.81px;
+    margin-top: 24px;
+    color: var(--white-cl);
+    background-color: inherit;
+  }
+  .send-arrows-icon {
+    fill: var(--white, #f6f5ef);
+    margin-left: 16px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  .rent-yacht-heading {
+    width: 287px;
+    height: 132px;
+    color: var(--white-cl);
+    font-family: DM Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 66px;
+    letter-spacing: -2.7px;
+    margin-bottom: 32px;
+  }
+  .rent-yacht-form-container,
+  .rent-yacht-textarea-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+  .rent-yacht-block {
+    display: flex;
+  }
+  .rent-yacht-section {
+    display: flex;
+  }
+  .rent-yacht-image {
+    margin-right: 69px; /* Add a gap between the image and the form */
+  }
+  .rent-yacht-input {
+    background-color: inherit;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid var(--white-cl);
+    width: 364px;
+    height: 35px;
+    color: var(--white-cl);
+  }
+  .rent-yacht-textarea {
+    background-color: inherit;
+    width: 364px;
+    height: 77px;
+    resize: none;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid var(--white-cl);
+    color: var(--white-cl);
+  }
+  .rent-yacht-send-button {
+    width: 132px;
+    height: 48px;
+    display: flex;
+    padding: 14px 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    border: 1px solid var(--white-cl);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.81px;
+    margin-top: 32px;
+    color: var(--main-white-cl);
+    background-color: inherit;
+  }
+  .rent-yacht-input::placeholder,
+  .rent-yacht-textarea::placeholder {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.2px;
+    letter-spacing: -0.72px;
+    color: var(--white-cl);
+  }
+  .send-arrows-icon {
+    fill: var(--white, #f6f5ef);
+    margin-left: 16px;
+  }
+  .rent-yacht-image,
+  .rent-yacht-form-container {
+    width: calc(50% - 69px);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 183px;
+    padding-right: 183px;
+  }
+  .rent-yacht-heading {
+    width: 282px;
+    height: 132px;
+    color: var(--white-cl);
+    font-family: DM Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 66px;
+    letter-spacing: -2.7px;
+    margin-bottom: 64px;
+  }
+  .rent-yacht-form-container,
+  .rent-yacht-textarea-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+  .rent-yacht-block {
+    display: flex;
+  }
+  .rent-yacht-section {
+    display: flex;
+  }
+  .rent-yacht-image {
+    margin-right: 188px; /* Add a gap between the image and the form */
+  }
+  .rent-yacht-input {
+    background-color: inherit;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid var(--white-cl);
+    width: 443px;
+    height: 35px;
+    color: var(--white-cl);
+  }
+  .rent-yacht-input::placeholder,
+  .rent-yacht-textarea::placeholder {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.2px;
+    letter-spacing: -0.72px;
+    color: var(--white-cl);
+  }
+  .rent-yacht-textarea {
+    background-color: inherit;
+    width: 443px;
+    height: 77px;
+    resize: none;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid var(--white-cl);
+    color: var(--white-cl);
+  }
+  .rent-yacht-send-button {
+    width: 132px;
+    height: 48px;
+    display: flex;
+    padding: 14px 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    border: 1px solid var(--white-cl);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.81px;
+    margin-top: 64px;
+    color: var(--main-white-cl);
+    background-color: inherit;
+  }
+  .send-arrows-icon {
+    fill: var(--white, #f6f5ef);
+    margin-left: 16px;
+  }
+  .rent-yacht-image,
+  .rent-yacht-form-container {
+    width: calc(50% - 184px);
+  }
+}
