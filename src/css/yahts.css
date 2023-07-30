@@ -3,14 +3,49 @@
 }
 
 .yb-container {
+  position: relative;
   margin-bottom: 80px;
 }
+.curved-lines-bg {
+  position: absolute;
+  width: 1509px;
+  height: 1616px;
+  top: 10%;
+  z-index: -2;
+}
+
+@media only screen and (max-width: 1279.98px) {
+  .curved-lines-bg {
+    display: none;
+  }
+}
+
 /* @media only screen and (min-width: 1280px) {
-  .yb-container::after {
-    content: '';
-    background-image: url();
+  .yb-container {
+    background-image: url(../img/yahts/grouplines.svg);
   }
 } */
+
+.swipe-block {
+  display: flex;
+  align-items: center;
+}
+
+.yb-swipe-btn-left,
+.yb-swipe-btn-right {
+  width: 50px;
+  height: 36px;
+  border-radius: 60px;
+  border: 1px solid var(--white-cl);
+  background-color: inherit;
+}
+@media only screen and (max-width: 1279.98px) {
+  .yb-swipe-btn-left,
+  .yb-swipe-btn-right {
+    display: none;
+  }
+}
+
 .yb-main-info {
   width: 335px;
   display: flex;
@@ -106,7 +141,7 @@
   font-size: 36px;
   font-weight: 500;
   line-height: 1.1;
-  letter-spacing: -3.15px;
+  letter-spacing: -2.7px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -149,7 +184,7 @@
     min-width: 153px;
     height: 48px;
     font-size: 18px;
-    letter-spacing: -0.96px;
+    letter-spacing: -0.98px;
   }
 }
 
@@ -280,8 +315,7 @@
   }
 }
 
-.yb-swipe-btn-left,
-.yb-swipe-btn-right {
+.yb-swipe-btn {
   width: 46px;
   height: 36px;
   border-radius: 60px;
@@ -290,9 +324,13 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .yb-swipe-btn-left,
-  .yb-swipe-btn-right {
+  .yb-swipe-btn {
     width: 50px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .yb-swipe-btn {
+    display: none;
   }
 }
 
