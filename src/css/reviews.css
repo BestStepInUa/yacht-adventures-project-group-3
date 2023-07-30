@@ -14,7 +14,7 @@
   font-size: 24px;
   font-style: italic;
   font-weight: 500;
-  color: #a1b5ba;
+
   line-height: 1.2;
   letter-spacing: -0.04em;
 
@@ -41,6 +41,13 @@
   .adventures-title {
     margin: 0;
   }
+}
+
+.adventure-title-gray {
+  background: var(--linear-green, linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%));
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .adventures-title-item {
