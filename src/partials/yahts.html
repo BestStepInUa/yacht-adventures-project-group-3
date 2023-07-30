@@ -8,6 +8,18 @@
     <div class="yb-card">
       <picture>
         <source
+        media="(min-width: 1280px)"
+        srcset="../img/yahts/desk_arrow@1x.png 1x, 
+        ../img/yahts/desk_arrow@2x.png 2x"
+        type="image/png"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="../img/yahts/tab_arrow@1x.png 1x, 
+        ../img/yahts/tab_arrow@2x.png 2x, "
+        type="image/png"
+      />
+        <source
           media="(max-width: 767px)"
           srcset="../img/yahts/mob_arrow@1x.png 1x, ../img/yahts/mob_arrow@2x.png 2x"
           type="image/png"
@@ -37,13 +49,13 @@
     </div>
     <div class="swipe-wrapper">
       <button type="button" class="yb-swipe-btn btn">
-        <svg class="swipe-svg" width="" height="">
-          <use href=""></use>
+        <svg class="swipe-svg" width="18" height="8">
+          <use href="./img/icons.svg#icon-arrow-left"></use>
         </svg>
       </button>
       <button type="button" class="yb-swipe-btn btn">
-        <svg class="swipe-svg" width="" height="">
-          <use href=""></use>
+        <svg class="swipe-svg" width="18" height="8">
+          <use href="../img/icons.svg#icon-arrow-right"></use>
         </svg>
       </button>
     </div>

@@ -3,6 +3,7 @@
 }
 
 .yb-container {
+  margin-bottom: 80px;
 }
 .yb-main-info {
   max-width: 335px;
@@ -11,12 +12,39 @@
   flex-direction: column;
   margin-bottom: 80px;
 }
+
+.yb-container::before {
+  content: '';
+  top: -40px;
+  left: -40px;
+  width: 255px;
+  height: 255px;
+  opacity: 0.6000000238418579;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  background: #91afba;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+.yb-container::after {
+  content: '';
+  top: -40px;
+  right: -40px;
+  width: 195px;
+  height: 195px;
+  transform: rotate(-44.916deg);
+  opacity: 0.30000001192092896;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  background: #a6a9b2;
+  z-index: -1;
+}
+
 .yb-title {
   max-width: 310px;
-  color: var(--main-white-cl);
-  font-family: DM Sans;
   font-size: 36px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.10125em;
@@ -24,7 +52,7 @@
 .yb-button {
   max-width: 134px;
   height: 43px;
-  color: var(--main-white-cl);
+  color: var(--white-cl);
   font-family: DM Sans;
   font-size: 14px;
   font-style: normal;
@@ -35,12 +63,12 @@
   display: block;
   padding: 14px 28px;
   border-radius: 60px;
-  border: 1px solid var(--main-white-cl);
+  border: 1px solid var(--white-cl);
 }
 .yb-card {
   display: flex;
   flex-direction: column;
-  background-color: var(--bg-dark-cl);
+  background-color: var(--dark-cl);
   border-radius: 24px;
   margin-bottom: 24px;
   padding: 24px;
@@ -60,20 +88,16 @@
   justify-content: space-between;
 }
 .yaht-name {
-  color: var(--main-white-cl);
-  font-family: DM Sans;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.045em;
   text-transform: uppercase;
 }
 .yaht-class {
-  color: var(--main-white-cl);
-  font-family: DM Sans;
   font-size: 12px;
-  font-style: normal;
+
   font-weight: 400;
   line-height: 1.18;
   letter-spacing: 0.0225em;
@@ -94,10 +118,8 @@
 
 .yaht-item,
 .yaht-item-description {
-  color: var(--main-white-cl);
-  font-family: DM Sans;
   font-size: 14px;
-  font-style: normal;
+
   font-weight: 400;
   line-height: 1.18;
   letter-spacing: 0.026em;
@@ -111,15 +133,15 @@
   display: flex;
   gap: 14px;
   justify-content: center;
-  margin-bottom: 80px;
 }
 .yb-swipe-btn {
   width: 46px;
   height: 36px;
   border-radius: 60px;
-  border: 1px solid var(--main-white-cl);
+  border: 1px solid var(--white-cl);
   background-color: inherit;
 }
 
 .swipe-svg {
+  fill: var(--white-cl);
 }
