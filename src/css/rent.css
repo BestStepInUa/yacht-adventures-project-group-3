@@ -88,6 +88,63 @@
     fill: var(--white, #f6f5ef);
     margin-left: 16px;
   }
+  .modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 335px;
+    min-height: 396px;
+    background: var(--dark-cl);
+    border-radius: 40px;
+    transition: var(--main-transition-function);
+    padding: 97px 64px 64px 64px;
+  }
+  .modal-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    top: 14px;
+    right: 14px;
+    background-color: transparent;
+    outline: 0;
+    border: none;
+  }
+  .icon-modal {
+    stroke: var(--white-cl);
+  }
+  .modal-heading {
+    color: var(--white, #f6f5ef);
+    width: 282px;
+    height: 29px;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -1.08px;
+    margin-bottom: 14px;
+  }
+  .modal-p {
+    color: var(--white, #f6f5ef);
+    width: 287px;
+    height: 100px;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: -0.28px;
+  }
+  .modal-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media only screen and (min-width: 768px) {
   .container {
@@ -178,6 +235,63 @@
   .rent-yacht-form-container {
     width: calc(50% - 69px);
   }
+  .modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 570px;
+    min-height: 522px;
+    background: var(--dark-cl);
+    border-radius: 40px;
+    transition: var(--main-transition-function);
+    padding: 97px 64px 64px 64px;
+  }
+  .modal-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    top: 32px;
+    right: 32px;
+    background-color: transparent;
+    outline: 0;
+    border: none;
+  }
+  .icon-modal {
+    stroke: var(--white-cl);
+  }
+  .modal-heading {
+    color: var(--white, #f6f5ef);
+    width: 282px;
+    height: 38px;
+    font-family: DM Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 38.4px */
+    letter-spacing: -1.44px;
+    margin-bottom: 16px;
+  }
+  .modal-p {
+    color: var(--white, #f6f5ef);
+    width: 442px;
+    height: 88px;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: -0.32px;
+  }
+  .modal-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .container {
@@ -211,7 +325,7 @@
     display: flex;
   }
   .rent-yacht-image {
-    margin-right: 188px; /* Add a gap between the image and the form */
+    margin-right: 188px;
   }
   .rent-yacht-input {
     background-color: inherit;
@@ -268,5 +382,76 @@
   .rent-yacht-image,
   .rent-yacht-form-container {
     width: calc(50% - 184px);
+  }
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  /* .is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  } */
+  .modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 570px;
+    min-height: 522px;
+    background: var(--dark-cl);
+    border-radius: 40px;
+    transition: var(--main-transition-function);
+    padding: 97px 64px 64px 64px;
+  }
+  .modal-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    top: 32px;
+    right: 32px;
+    background-color: transparent;
+    outline: 0;
+    border: none;
+  }
+  .icon-modal {
+    stroke: var(--white-cl);
+  }
+  .modal-heading {
+    color: var(--white, #f6f5ef);
+    width: 282px;
+    height: 38px;
+    font-family: DM Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -1.44px;
+    margin-bottom: 16px;
+  }
+  .modal-p {
+    color: var(--white, #f6f5ef);
+    width: 442px;
+    height: 88px;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: -0.32px;
+  }
+  .modal-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
