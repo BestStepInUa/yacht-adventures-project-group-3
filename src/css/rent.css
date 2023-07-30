@@ -149,6 +149,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 287px;
+    height: 149px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -301,6 +303,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 338px;
+    height: 198px;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -464,5 +468,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 338px;
+    height: 198px;
   }
 }
