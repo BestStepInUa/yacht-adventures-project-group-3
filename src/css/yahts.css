@@ -1,0 +1,125 @@
+.section {
+  background-color: var(--bg-black-cl);
+}
+
+.yb-container {
+}
+.yb-main-info {
+  max-width: 335px;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+.yb-title {
+  max-width: 310px;
+  color: var(--main-white-cl);
+  font-family: DM Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.10125em;
+}
+.yb-button {
+  max-width: 134px;
+  height: 43px;
+  color: var(--main-white-cl);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  background-color: inherit;
+  display: block;
+  padding: 14px 28px;
+  border-radius: 60px;
+  border: 1px solid var(--main-white-cl);
+}
+.yb-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-dark-cl);
+  border-radius: 24px;
+  margin-bottom: 24px;
+  padding: 24px;
+  gap: 24px;
+}
+.yb-img {
+  width: 299px;
+  height: 251px;
+  text-align: center;
+  border-radius: 24px;
+  background: url(<path-to-image>), lightgray -6.748px 0px / 115.615% 106.773% no-repeat;
+}
+.yaht-info {
+  display: inline-flex;
+  justify-content: center;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.yaht-name {
+  color: var(--main-white-cl);
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.045em;
+  text-transform: uppercase;
+}
+.yaht-class {
+  color: var(--main-white-cl);
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.0225em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.yaht-characteristics {
+  display: flex;
+  column-gap: 32px;
+}
+
+.yb-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+
+.yaht-item,
+.yaht-item-description {
+  color: var(--main-white-cl);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.026em;
+  text-transform: uppercase;
+}
+.yaht-item-description {
+  text-transform: none;
+}
+
+.swipe-wrapper {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.yb-swipe-btn {
+  width: 46px;
+  height: 36px;
+  border-radius: 60px;
+  border: 1px solid var(--main-white-cl);
+  background-color: inherit;
+}
+
+.swipe-svg {
+}
