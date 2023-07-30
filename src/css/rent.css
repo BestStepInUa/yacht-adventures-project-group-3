@@ -26,8 +26,6 @@
     max-width: 375px;
     margin: 0 auto;
     padding: 0 20px;
-    outline: 2px solid red;
-    outline-offset: -2px;
   }
   .rent-yacht-heading {
     color: var(--white, #f6f5ef);
