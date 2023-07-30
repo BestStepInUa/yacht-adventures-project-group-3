@@ -98,7 +98,7 @@
     background: var(--dark-cl);
     border-radius: 40px;
     transition: var(--main-transition-function);
-    padding: 97px 64px 64px 64px;
+    padding: 40px 24px;
   }
   .modal-btn {
     display: flex;
