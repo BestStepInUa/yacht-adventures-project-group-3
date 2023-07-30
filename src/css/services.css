@@ -1,0 +1,117 @@
+.servicesblock-bg {
+    background-color: #11131F;
+}
+
+.servicesblock-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    gap: 64px;
+    align-items: baseline;
+}
+
+.services-block {
+    padding: 32px;
+    max-width: 1280px;
+    display: block;
+    margin: 0 auto;
+}
+
+.store-imge {
+    position: relative;
+}
+
+.store-imge::after {
+    content: "";
+    position: absolute;
+    border-radius: 414px;
+    opacity: 0.6000000238418579;
+    background: #91AFBA;
+    filter: blur(100px);
+    width: 414px;
+    height: 414px;
+    transform: rotate(-45.074deg);
+    flex-shrink: 0;
+    top: 200px;
+    left: -240px;
+}
+
+.services-color {
+    display: inline-flex;
+    padding: 14px 28px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 60px;
+    background: #F6F5EF;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: -80px;
+}
+
+.title-services {
+    color: #11131F;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.125em;
+    letter-spacing: -0.81px;
+}
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1280px) {
+    .services-block {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    .servicesblock-list {
+        gap: 32px;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    .servicesblock-last {
+        margin-left: 64px;
+        margin-top: 32px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    .list-servicesimge {
+        display: block;
+        margin-right: 300px;
+    }
+}
+
+/* Mobile */
+@media (min-width: 375px) and (max-width: 768px) {
+    .services-block {
+        max-width: 375px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+    .servicesblock-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+        gap: 24px;
+    }
+}
+
+/* @media (min-width: 375px) and (max-width: 768px) {
+    .servicesblock-last {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .services-last {
+        margin-top: 24px;
+    }
+} */
