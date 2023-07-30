@@ -1,0 +1,114 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 14px;
+}
+/* @media only screen and (min-width: 768px) {
+  .footer {
+    padding-top: 64px;
+    padding-bottom: 16px;
+  }
+} */
+.section {
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-up-part {
+  display: flex;
+  flex-direction: column;
+  gap: var(--indent);
+  --indent: 40px;
+}
+.footer-logo-container {
+  display: inline-flex;
+  gap: 8px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer-logo {
+  fill: red;
+}
+/* @media only screen and (min-width: 768px) {
+  .footer-logo {
+    width: 23px;
+    height: 23px;
+  }
+} */
+.footer-logo-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+/* @media only screen and (min-width: minwidthpx) {
+  .footer-logo-text {
+    font-size: 18px;
+    line-height: 1.18;
+  }
+} */
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--indent);
+  --indent: 14px;
+}
+.footer-list {
+}
+.list {
+}
+.footer-list-item {
+}
+.footer-list-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.footer-social-media-container {
+}
+.footer-social-media-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.footer-social-media-list {
+  display: flex;
+  gap: var(--indent);
+  --indent: 14px;
+}
+.footer-social-media-list-item {
+}
+.footer-social-media-list-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--grey-cl);
+  border-radius: 6px;
+  transition: border-color var(--main-transition-function);
+}
+.footer-social-media-list-item-link:hover,
+.footer-social-media-list-item-link:focus {
+  border-color: var(--light-grn-cl);
+}
+.footer-social-media-list-item-link-icon {
+  fill: var(--grey-cl);
+  transition: fill var(--main-transition-function);
+}
+.footer-social-media-list-item-link:hover .footer-social-media-list-item-link-icon,
+.footer-social-media-list-item-link:focus .footer-social-media-list-item-link-icon {
+  fill: var(--light-grn-cl);
+}
+.footer-down-part {
+}
+.footer-down-ownership {
+}
+.footer-down-privacy-police {
+}
