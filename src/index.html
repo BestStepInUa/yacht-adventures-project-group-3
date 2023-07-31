@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yacht Adventures</title>
-    <!-- Modern Normalize CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <!-- Loads the specified .html file -->
-    <!-- Header loading -->
-    <load src="partials/header.html" />
-    <main>
-      <!-- Hero section loading -->
-      <load src="partials/hero.html" />
-      <!-- About section loading -->
-      <load src="partials/about.html" />
-      <!-- Yahts section loading -->
-      <load src="partials/yahts.html" />
-      <!-- Services section loading -->
-      <load src="partials/services.html" />
-      <!-- Rent section loading -->
-      <load src="partials/rent.html" />
-      <!-- Reviews section loading -->
-      <load src="partials/reviews.html" />
-    </main>
-    <!-- Footer loading -->
-    <load src="partials/footer.html" />
-    <!-- JS scripts -->
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yacht Adventures</title>
+  <!-- Modern Normalize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- Loads the specified .html file -->
+  <!-- Header loading -->
+  <load src="partials/header.html" />
+  <main>
+    <!-- Hero section loading -->
+    <load src="partials/hero.html" />
+    <!-- About section loading -->
+    <load src="partials/about.html" />
+    <!-- Yahts section loading -->
+    <load src="partials/yahts.html" />
+    <!-- Services section loading -->
+    <load src="partials/services.html" />
+    <!-- Rent section loading -->
+    <load src="partials/rent.html" />
+    <!-- Reviews section loading -->
+    <load src="partials/reviews.html" />
+  </main>
+  <!-- Footer loading -->
+  <load src="partials/footer.html" />
+  <!-- Mobile menu -->
+  <load src="./partials/mobile-menu.html" />
+  <!-- JS scripts -->
+  <script type="module" src="js/main.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
+</body>
+
 </html>
