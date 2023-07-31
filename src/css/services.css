@@ -78,10 +78,10 @@
     left: 24px;
 
     padding: 14px 28px;
-    background-color: var(--white-cl);
+    background-color: #f6f5ef;
     border-radius: 60px;
 
-    color: var(--black-cl);
+    color: #11131f;
     font-size: 14px;
     line-height: 110%;
     letter-spacing: -0.045em;
@@ -101,9 +101,10 @@
     height: 323px;
     transform: rotate(-45deg);
     z-index: -1;
+
     border-radius: 50%;
     opacity: 0.6;
-    background: var(--light-grn-cl);
+    background: #91afba;
     filter: blur(100px);
 }
 
