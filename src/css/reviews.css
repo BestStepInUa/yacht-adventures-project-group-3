@@ -80,16 +80,13 @@
   }
 }
 
-@media only screen and (min-width: minwidthpx) {
+@media only screen and (min-width: 768px) {
   .adventures-title-item {
     width: 497px;
   }
 }
 
 .adventures-text {
-  color: var(--white-cl);
-
-  font-family: DM Sans;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.4;
@@ -190,10 +187,8 @@
 }
 
 .adventures-list-item-title {
-  color: var(--white-cl);
   text-align: center;
 
-  font-style: normal;
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.04em;
@@ -220,6 +215,12 @@
   padding: 0 3.5px;
 
   width: 100%;
+}
+
+@media only screen and (min-width: 375px) {
+  .adventures-list-item-text {
+    /* width: 300px; */
+  }
 }
 
 @media only screen and (min-width: 768px) {
