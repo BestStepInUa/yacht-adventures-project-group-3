@@ -3,12 +3,11 @@
     <!-- Image  -->
     <div class="rent-yacht-image">
       <h3 class="rent-yacht-heading">Rent a yacht now</h3>
-      <img
-        src="./img/rent/img-rent-yacht-01@1x.jpg"
-        alt="Rent yacht now"
-        class="rent-yacht-img"
-        srcset="./img/rent/img-rent-yacht-01@1x.jpg, ./img/rent/img-rent-yacht-01@2x.jpg"
-      />
+      <picture>
+        <source media="(min-width:768px)" srcset="../img/rent/img-rent-yaht-01@2x.jpg" />
+        <source media="(min-width:320px)" srcset="../img/rent/img-rent-yacht-01-mobile.png" />
+        <img src="../img/rent/img-rent-yaht-01@1x.jpg" alt="Flowers" class="rent-yacht-image" />
+      </picture>
     </div>
     <!-- Form  -->
     <div class="rent-yacht-form-container">
@@ -57,12 +56,11 @@
             <use href="../img/icons.svg#icon-close-modal"></use>
           </svg>
         </button>
-        <img
-          src="../img/rent/img-yaht@1x.png"
-          srcset="./img/rent/img-yaht@1x.png"
-          alt="Thank you for confirming your order"
-          class="modal-image"
-        />
+        <picture>
+          <source media="(min-width:768px)" srcset="../img/rent/img-modal-01@1x.png" />
+          <source media="(min-width:320px)" srcset="../img/rent/img-modal-01-mobile.png" />
+          <img src="../img/rent/img-modal-01@1x.png" alt="Thanks for confirming your order" class="modal-image" />
+        </picture>
         <h3 class="modal-heading">Thank You</h3>
         <p class="modal-p"
           >Thank you for choosing Yacht Adventures, your booking details have been received and our team will be in
