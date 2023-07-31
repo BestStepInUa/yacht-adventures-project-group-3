@@ -90,7 +90,7 @@
     width: 335px;
     min-height: 396px;
     background: var(--dark-cl);
-    border-radius: 40px;
+    border-radius: 20px;
     transition: var(--main-transition-function);
     padding: 40px 24px;
   }
@@ -167,7 +167,7 @@
     display: flex;
   }
   .rent-yacht-image {
-    margin-right: 69px; /* Add a gap between the image and the form */
+    margin-right: 69px;
   }
   .rent-yacht-input {
     background-color: inherit;

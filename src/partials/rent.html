@@ -3,7 +3,12 @@
     <!-- Image  -->
     <div class="rent-yacht-image">
       <h3 class="rent-yacht-heading">Rent a yacht now</h3>
-      <img src="../img/rent/img-rent-yacht-01@1x.jpg" alt="Rent yacht now" class="rent-yacht-img" srcset="../img/rent/img-rent-yacht-01@1x.jpg , ../img/rent/img-rent-yacht-01@2x.jpg" />
+      <img
+        src="./img/rent/img-rent-yacht-01@1x.jpg"
+        alt="Rent yacht now"
+        class="rent-yacht-img"
+        srcset="./img/rent/img-rent-yacht-01@1x.jpg, ./img/rent/img-rent-yacht-01@2x.jpg"
+      />
     </div>
     <!-- Form  -->
     <div class="rent-yacht-form-container">
@@ -17,13 +22,13 @@
         <div class="rent-yacht-form-container">
           <label for="user-email" class="rent-yacht-input-label"></label>
           <div class="rent-yacht-input-container">
-            <input type="email" placeholder="Email" class="rent-yacht-input" />
+            <input type="email" placeholder="Email" class="rent-yacht-input" name="user-email" id="user-email" />
           </div>
         </div>
         <div class="rent-yacht-form-container">
           <label for="user-phone" class="rent-yacht-input-label"></label>
           <div class="rent-yacht-input-container">
-            <input type="tel" placeholder="Phone Number" class="rent-yacht-input" />
+            <input type="tel" placeholder="Phone Number" class="rent-yacht-input" name="user-phone" id="user-phone" />
           </div>
         </div>
         <div class="rent-yacht-textarea-container">
@@ -52,9 +57,19 @@
             <use href="../img/icons.svg#icon-close-modal"></use>
           </svg>
         </button>
-        <img src="../img/rent/img-yaht@1x.png" srcset="../img/rent/img-yaht@1x.png" alt="Thank you for confirming your order" class="modal-image">
+        <img
+          src="../img/rent/img-yaht@1x.png"
+          srcset="./img/rent/img-yaht@1x.png"
+          alt="Thank you for confirming your order"
+          class="modal-image"
+        />
         <h3 class="modal-heading">Thank You</h3>
-        <p class="modal-p">Thank you for choosing Yacht Adventures, your booking details have been received and our team will be in touch shortly to confirm your reservation and provide any additional information or assistance you may need.</p>
-  </div>
+        <p class="modal-p"
+          >Thank you for choosing Yacht Adventures, your booking details have been received and our team will be in
+          touch shortly to confirm your reservation and provide any additional information or assistance you may
+          need.</p
+        >
+      </div>
+    </div>
   </div>
 </section>
