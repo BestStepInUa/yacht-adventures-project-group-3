@@ -1,0 +1,440 @@
+@media only screen and (min-width: 320px) {
+  .rent-yacht-heading {
+    color: var(--white-cl);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.045em;
+    margin-bottom: 16px;
+  }
+  .rent-yacht-form-container,
+  .rent-yacht-textarea-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .rent-yacht-input {
+    background-color: inherit;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid var(--white-cl);
+    width: 335px;
+    height: 35px;
+    color: var(--white-cl);
+  }
+  .rent-yacht-input::placeholder,
+  .rent-yacht-textarea::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.045em;
+    color: var(--white-cl);
+  }
+  .rent-yacht-textarea {
+    background-color: inherit;
+    width: 335px;
+    height: 77px;
+    resize: none;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid var(--white-cl);
+    color: var(--white-cl);
+  }
+  .rent-yacht-send-button {
+    width: 132px;
+    height: 48px;
+    display: flex;
+    padding: 14px 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    border: 1px solid var(--white-cl);
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 24px;
+    color: var(--white-cl);
+    background-color: inherit;
+  }
+  .send-arrows-icon {
+    fill: var(--white-cl);
+    margin-left: 16px;
+  }
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity var(--main-transition-function), visibility var(--main-transition-function);
+  }
+  .modal-window::after {
+    content: '';
+    top: -40px;
+    left: -40px;
+    width: 142px;
+    height: 142px;
+    transform: rotate(-45.074deg);
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    background: #91afba;
+    z-index: -1;
+  }
+  .modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 335px;
+    min-height: 396px;
+    background: var(--dark-cl);
+    border-radius: 20px;
+    transition: var(--main-transition-function);
+    padding: 40px 24px;
+  }
+  .is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .modal-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    top: 14px;
+    right: 14px;
+    background-color: transparent;
+    outline: 0;
+    border: none;
+  }
+  .icon-modal {
+    stroke: var(--white-cl);
+  }
+  .modal-heading {
+    color: var(--white-cl);
+    width: 282px;
+    height: 29px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.045em;
+    margin-bottom: 14px;
+  }
+  .modal-p {
+    color: var(--white-cl);
+    width: 287px;
+    height: 100px;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+  }
+  .modal-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 287px;
+    height: 149px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .rent-yacht-heading {
+    width: 287px;
+    height: 132px;
+    color: var(--white-cl);
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.045em;
+    margin-bottom: 32px;
+  }
+  .rent-yacht-form-container,
+  .rent-yacht-textarea-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+  .rent-yacht-block {
+    display: flex;
+  }
+  .rent-yacht-section {
+    display: flex;
+  }
+  .rent-yacht-image {
+    margin-right: 69px;
+  }
+  .rent-yacht-input {
+    background-color: inherit;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid var(--white-cl);
+    width: 364px;
+    height: 35px;
+    color: var(--white-cl);
+  }
+  .rent-yacht-textarea {
+    background-color: inherit;
+    width: 364px;
+    height: 77px;
+    resize: none;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid var(--white-cl);
+    color: var(--white-cl);
+  }
+  .rent-yacht-send-button {
+    width: 132px;
+    height: 48px;
+    display: flex;
+    padding: 14px 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    border: 1px solid var(--white-cl);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.045em;
+    margin-top: 32px;
+    color: var(--white-cl);
+    background-color: inherit;
+  }
+  .rent-yacht-input::placeholder,
+  .rent-yacht-textarea::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.045em;
+    color: var(--white-cl);
+  }
+  .send-arrows-icon {
+    fill: var(--white-cl);
+    margin-left: 16px;
+  }
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity var(--main-transition-function), visibility var(--main-transition-function);
+  }
+  .modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 570px;
+    min-height: 522px;
+    background: var(--dark-cl);
+    border-radius: 40px;
+    transition: var(--main-transition-function);
+    padding: 97px 64px 64px 64px;
+  }
+  .is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .modal-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    top: 32px;
+    right: 32px;
+    background-color: transparent;
+    outline: 0;
+    border: none;
+  }
+  .icon-modal {
+    stroke: var(--white-cl);
+  }
+  .modal-heading {
+    color: var(--white-cl);
+    width: 282px;
+    height: 38px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.045em;
+    margin-bottom: 16px;
+  }
+  .modal-p {
+    color: var(--white-cl);
+    width: 442px;
+    height: 88px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+  }
+  .modal-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 338px;
+    height: 198px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .container {
+    padding-left: 183px;
+    padding-right: 183px;
+  }
+  .rent-yacht-heading {
+    width: 282px;
+    height: 132px;
+    color: var(--white-cl);
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.045em;
+    margin-bottom: 64px;
+  }
+  .rent-yacht-form-container,
+  .rent-yacht-textarea-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
+  .rent-yacht-block {
+    display: flex;
+  }
+  .rent-yacht-section {
+    display: flex;
+  }
+  .rent-yacht-image {
+    margin-right: 188px;
+  }
+  .rent-yacht-input {
+    background-color: inherit;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid var(--white-cl);
+    width: 443px;
+    height: 35px;
+    color: var(--white-cl);
+  }
+  .rent-yacht-input::placeholder,
+  .rent-yacht-textarea::placeholder {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.045em;
+    color: var(--white-cl);
+  }
+  .rent-yacht-textarea {
+    background-color: inherit;
+    width: 443px;
+    height: 77px;
+    resize: none;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid var(--white-cl);
+    color: var(--white-cl);
+  }
+  .rent-yacht-send-button {
+    width: 132px;
+    height: 48px;
+    display: flex;
+    padding: 14px 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    border: 1px solid var(--white-cl);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.045em;
+    margin-top: 64px;
+    color: var(--white-cl);
+    background-color: inherit;
+  }
+  .send-arrows-icon {
+    fill: var(--white-cl);
+    margin-left: 16px;
+  }
+
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity var(--main-transition-function), visibility var(--main-transition-function);
+  }
+
+  .modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 570px;
+    min-height: 522px;
+    background: var(--dark-cl);
+    border-radius: 40px;
+    transition: var(--main-transition-function);
+    padding: 97px 64px 64px 64px;
+  }
+  .is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .modal-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    top: 32px;
+    right: 32px;
+    background-color: transparent;
+    outline: 0;
+    border: none;
+  }
+  .icon-modal {
+    stroke: var(--white-cl);
+  }
+  .modal-heading {
+    color: var(--white-cl);
+    width: 282px;
+    height: 38px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.045em;
+    margin-bottom: 16px;
+  }
+  .modal-p {
+    color: var(--white-cl);
+    width: 442px;
+    height: 88px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+  }
+  .modal-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 338px;
+    height: 198px;
+  }
+}
