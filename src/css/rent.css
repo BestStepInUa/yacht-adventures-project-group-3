@@ -217,10 +217,6 @@
     fill: var(--white-cl);
     margin-left: 16px;
   }
-  .rent-yacht-image,
-  .rent-yacht-form-container {
-    width: calc(50% - 69px);
-  }
   .backdrop {
     position: fixed;
     top: 0;
@@ -370,10 +366,7 @@
     fill: var(--white-cl);
     margin-left: 16px;
   }
-  .rent-yacht-image,
-  .rent-yacht-form-container {
-    width: calc(50% - 184px);
-  }
+
   .backdrop {
     position: fixed;
     top: 0;
