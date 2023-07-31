@@ -31,7 +31,7 @@
 }
 .adventures-title {
   font-size: 24px;
-  font-style: italic;
+
   font-weight: 500;
 
   line-height: 1.2;
@@ -63,15 +63,11 @@
 }
 
 .adventure-title-gray {
+  font-style: italic;
   background: var(--linear-green, linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%));
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.adventures-title-item {
-  color: var(--white-cl);
-  font-style: normal;
 }
 
 @media only screen and (min-width: 375px) {
@@ -208,7 +204,7 @@
   text-align: center;
 
   font-size: 12px;
-  font-weight: 400;
+
   line-height: 1.4;
   letter-spacing: -0.02em;
 
