@@ -6,7 +6,7 @@
   --white-cl: #f6f5ef;
   --hover-cl: #88b3b9;
   --grey-cl: rgba(246, 245, 239, 0.5);
-  --linear-gradient: linear-gradient(#bec7c2 0%, #a1b5ba 100%);
+  --linear-gradient: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
   /* The main number of elements in Flexbox grid */
   --items: 3;
   /* The main gap indent in Flexbox grid */
