@@ -73,6 +73,19 @@
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .modal-window::after {
+    content: '';
+    top: -40px;
+    left: -40px;
+    width: 142px;
+    height: 142px;
+    transform: rotate(-45.074deg);
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    background: #91afba;
+    z-index: -1;
+  }
   .modal-window {
     position: absolute;
     top: 50%;
@@ -236,7 +249,6 @@
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
   .modal-window {
     position: absolute;
     top: 50%;
