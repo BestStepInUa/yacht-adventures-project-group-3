@@ -8,10 +8,10 @@
 }
 .curved-lines-bg {
   position: absolute;
-  width: 1509px;
-  height: 1616px;
   top: 10%;
   z-index: -2;
+  width: 1509px;
+  height: 1616px;
 }
 
 @media only screen and (max-width: 1279.98px) {
@@ -35,8 +35,8 @@
 .yb-swipe-btn-right {
   width: 50px;
   height: 36px;
-  border-radius: 60px;
   border: 1px solid var(--white-cl);
+  border-radius: 60px;
   background-color: inherit;
 }
 @media only screen and (max-width: 1279.98px) {
@@ -47,17 +47,20 @@
 }
 
 .yb-main-info {
-  width: 335px;
   display: flex;
-  gap: 40px;
+  display: flex;
   flex-direction: column;
+  gap: 40px;
+
+  align-items: flex-start;
+  width: 335px;
   margin-bottom: 80px;
 }
 
 @media only screen and (min-width: 768px) {
   .yb-main-info {
-    width: 640px;
     gap: 64px;
+    width: 640px;
     margin-bottom: 100px;
   }
 }
@@ -71,17 +74,17 @@
 
 .yb-container::before {
   content: '';
+  position: absolute;
   top: -40px;
   left: -40px;
+  z-index: -1;
   width: 255px;
   height: 255px;
-  opacity: 0.6000000238418579;
-  position: absolute;
   border-radius: 50%;
-  filter: blur(100px);
   background: #91afba;
+  opacity: 0.6000000238418579;
+  filter: blur(100px);
   transform: rotate(-45deg);
-  z-index: -1;
 }
 @media only screen and (min-width: 768px) {
   .yb-container::before {
@@ -105,17 +108,17 @@
 
 .yb-container::after {
   content: '';
+  position: absolute;
   top: -40px;
   right: -40px;
+  z-index: -1;
   width: 195px;
   height: 195px;
-  transform: rotate(-44.916deg);
-  opacity: 0.30000001192092896;
-  position: absolute;
   border-radius: 50%;
-  filter: blur(100px);
   background: #a6a9b2;
-  z-index: -1;
+  opacity: 0.30000001192092896;
+  filter: blur(100px);
+  transform: rotate(-44.916deg);
 }
 @media only screen and (min-width: 768px) {
   .yb-container::after {
@@ -138,45 +141,39 @@
 
 .yb-title {
   width: 310px;
-  font-size: 36px;
   font-weight: 500;
+  font-size: 36px;
   line-height: 1.1;
-  letter-spacing: -2.7px;
+  letter-spacing: -0.045em;
 }
 
 @media only screen and (min-width: 768px) {
   .yb-title {
     width: 100%;
     font-size: 70px;
-    /* letter-spacing: 0.196875em; */
-    letter-spacing: -3.15px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .yb-title {
-    width: 100%;
     align-items: center;
     font-size: 100px;
-    letter-spacing: -4.5px;
   }
 }
 
 .yb-button {
+  display: block;
   max-width: 134px;
   height: 43px;
-  color: var(--white-cl);
-  font-family: DM Sans;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.04em;
-  background-color: inherit;
-  display: block;
   padding: 14px 28px;
-  border-radius: 60px;
   border: 1px solid var(--white-cl);
+  border-radius: 60px;
+  background-color: inherit;
+  color: var(--white-cl);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: -0.045em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -202,22 +199,22 @@
 @media only screen and (min-width: 1280px) {
   .yaht-choice {
     position: relative;
-    width: 1094px;
     gap: 16px;
-    margin: 0 auto;
     justify-content: center;
+    width: 1094px;
+    margin: 0 auto;
   }
 }
 
 .yb-card {
   display: flex;
   flex-direction: column;
-  background-color: var(--dark-cl);
-  border-radius: 24px;
-  padding: 24px;
   gap: 24px;
-  --items: 1;
   width: calc((100% - (var(--items) - 1) * var(--indent)) / var(--items));
+  padding: 24px;
+  border-radius: 24px;
+  background-color: var(--dark-cl);
+  --items: 1;
 }
 
 @media only screen and (min-width: 768px) {
@@ -253,18 +250,16 @@
 .yb-img {
   width: 299px;
   height: 251px;
-  text-align: center;
   border-radius: 24px;
   background: url(<path-to-image>), lightgray -6.748px 0px / 115.615% 106.773% no-repeat;
+  text-align: center;
 }
 .yaht-info {
   display: inline-flex;
-  justify-content: center;
-  align-items: baseline;
   justify-content: space-between;
+  align-items: center;
 }
 .yaht-name {
-  font-size: 16px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.045em;
@@ -272,10 +267,8 @@
 }
 .yaht-class {
   font-size: 12px;
-
-  font-weight: 400;
   line-height: 1.18;
-  letter-spacing: 0.0225em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   opacity: 0.5;
 }
@@ -289,13 +282,13 @@
   display: flex;
   flex-direction: column;
   row-gap: 6px;
+  align-items: flex-start;
 }
 
 .yaht-item,
 .yaht-item-description {
-  font-size: 14px;
-
   font-weight: 400;
+  font-size: 14px;
   line-height: 1.18;
   letter-spacing: 0.026em;
   text-transform: uppercase;
@@ -318,8 +311,8 @@
 .yb-swipe-btn {
   width: 46px;
   height: 36px;
-  border-radius: 60px;
   border: 1px solid var(--white-cl);
+  border-radius: 60px;
   background-color: inherit;
 }
 
