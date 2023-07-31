@@ -1,116 +1,123 @@
-.servicesblock-bg {
-    background-color: var(--black-cl);
-}
+/* .services {
+} */
 
-.hidden-services {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
-.servicesblock-list {
-    flex-wrap: wrap;
-    justify-content: center;
-    display: flex;
-    gap: 64px;
-    align-items: baseline;
-}
-
-.services-block {
-    padding: 32px;
-    max-width: 1280px;
-    display: block;
-    margin: 0 auto;
-}
-
-.store-imge {
+.services-container {
     position: relative;
 }
 
-.store-imge::after {
-    content: '';
-    position: absolute;
-    border-radius: 414px;
-    opacity: 0.6000000238418579;
-    background: var(--services-gradient);
-    filter: blur(100px);
-    width: 414px;
-    height: 414px;
-    transform: rotate(-45.074deg);
-    flex-shrink: 0;
-    top: 200px;
-    left: -240px;
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
-.services-color {
-    display: inline-flex;
-    padding: 14px 28px;
-    align-items: flex-start;
-    gap: 10px;
-    border-radius: 60px;
-    background: var(--white-cl);
-    position: absolute;
-    margin-left: 40px;
-    margin-top: -80px;
-}
-
-.title-services {
-    color: var(--black-cl);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.125em;
-    letter-spacing: -0.81px;
-}
-
-/* Tablet */
-@media (min-width: 768px) and (max-width: 1280px) {
-    .services-block {
-        max-width: 768px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1280px) {
-    .servicesblock-list {
+@media only screen and (min-width: 768px) {
+    .services-list {
         gap: 32px;
-        align-items: flex-end;
-        flex-direction: column;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1280px) {
-    .servicesblock-last {
-        margin-left: 64px;
-        margin-top: 32px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1280px) {
-    .list-servicesimge {
-        display: block;
-        margin-right: 300px;
-    }
-}
-
-/* Mobile */
-@media (min-width: 375px) and (max-width: 768px) {
-    .services-block {
-        max-width: 375px;
-    }
-}
-
-@media (min-width: 375px) and (max-width: 768px) {
-    .servicesblock-list {
+@media only screen and (min-width: 1280px) {
+    .services-list {
+        flex-direction: row;
+        gap: 64px;
         flex-wrap: wrap;
-        justify-content: center;
-        display: flex;
-        gap: 24px;
+    }
+}
+
+/* .services-item {
+} */
+@media only screen and (min-width: 768px) {
+    .services-item.item2 {
+        width: 400px;
+        align-self: flex-end;
+    }
+
+    .services-item.item3 {
+        width: 380px;
+        margin-left: 32px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .services-item.item1 {
+        width: 712px;
+    }
+
+    .services-item.item2 {
+        width: 440px;
+    }
+
+    .services-item.item3 {
+        width: 436px;
+        margin-left: 340px;
+    }
+}
+
+/* .services-link {
+} */
+
+.services-picture {
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.services-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 19, 31, 0.2);
+}
+
+.services-caption {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+
+    padding: 14px 28px;
+    background-color: var(--white-cl);
+    border-radius: 60px;
+
+    color: var(--black-cl);
+    font-size: 14px;
+    line-height: 110%;
+    letter-spacing: -0.045em;
+}
+
+@media only screen and (min-width: 768px) {
+    .services-caption {
+        font-size: 18px;
+    }
+}
+
+.services-spot {
+    position: absolute;
+    top: 306px;
+    left: -219px;
+    width: 323px;
+    height: 323px;
+    transform: rotate(-45deg);
+    z-index: -1;
+    border-radius: 50%;
+    opacity: 0.6;
+    background: var(--light-grn-cl);
+    filter: blur(100px);
+}
+
+@media only screen and (min-width: 768px) {
+    .services-spot {
+        top: 566px;
+        width: 414px;
+        height: 414px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .services-spot {
+        top: 231px;
+        width: -213px;
     }
 }
