@@ -1,4 +1,8 @@
 @media only screen and (min-width: 320px) {
+  .rent-yacht-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   .rent-yacht-heading {
     font-size: 36px;
     font-weight: 500;
@@ -127,6 +131,10 @@
   }
 }
 @media only screen and (min-width: 768px) {
+  .rent-yacht-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .rent-yacht-heading {
     width: 287px;
     height: 132px;
@@ -272,6 +280,10 @@
   .container {
     padding-left: 183px;
     padding-right: 183px;
+  }
+  .rent-yacht-section {
+    padding-top: 82px;
+    padding-bottom: 82px;
   }
   .rent-yacht-heading {
     width: 282px;
