@@ -55,12 +55,12 @@
     position: absolute;
     width: 279px;
     height: 279px;
-    transform: rotate(-44.916deg);
-    bottom: -9px;
-    left: -166px;
+    transform: rotate(-45deg);
+    bottom: -4px;
+    left: -149px;
     border-radius: 279px;
     opacity: 0.6000000238418579;
-    background: #91AFBA;
+    background: var(--light-blur-first-cl);
     filter: blur(100px);
     display: none;
 }
@@ -70,12 +70,12 @@
     position: absolute;
     width: 279px;
     height: 279px;
-    transform: rotate(-44.916deg);
-    bottom: -139.5px;
-    left: 106px;
+    transform: rotate(-45deg);
+    bottom: -140px;
+    left: 110px;
     border-radius: 279px;
     opacity: 0.8999999761581421;
-    background: #939CAC;
+    background: var(--light-blur-second-cl);
     filter: blur(100px);
     display: none;
 }
