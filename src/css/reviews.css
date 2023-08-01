@@ -1,19 +1,19 @@
 .adventures {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
   .adventures {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .adventures {
-    padding-top: 164px;
-    padding-bottom: 164px;
+    padding-top: 82px;
+    padding-bottom: 82px;
   }
 }
 
@@ -31,14 +31,10 @@
 }
 .adventures-title {
   font-size: 24px;
-
   font-weight: 500;
-
   line-height: 1.2;
   letter-spacing: -0.04em;
-
   margin: 0;
-
   margin-bottom: 24px;
 }
 
@@ -65,7 +61,7 @@
 .adventure-title-gray {
   font-style: italic;
   background: var(--linear-green, linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%));
-
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -184,11 +180,9 @@
 
 .adventures-list-item-title {
   text-align: center;
-
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.04em;
-
   margin-top: 18px;
   margin-bottom: 8px;
 }
@@ -202,22 +196,18 @@
 .adventures-list-item-text {
   color: var(--grey-cl);
   text-align: center;
-
   font-size: 12px;
-
   line-height: 1.4;
   letter-spacing: -0.02em;
-
   padding: 0 3.5px;
-
   width: 100%;
 }
 
-@media only screen and (min-width: 375px) {
+/* @media only screen and (min-width: 375px) {
   .adventures-list-item-text {
-    /* width: 300px; */
+    width: 300px;
   }
-}
+} */
 
 @media only screen and (min-width: 768px) {
   .adventures-list-item-text {
