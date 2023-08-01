@@ -83,6 +83,20 @@
     transition: var(--main-transition-function);
     padding: 40px 24px;
   }
+  .modal-window::after {
+    content: '';
+    width: 142px;
+    height: 142px;
+    top: 75px;
+    left: 96px;
+    background: #91afba;
+    opacity: 0.6;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    transform: rotate(45deg);
+    z-index: -1;
+  }
   .is-hidden {
     visibility: hidden;
     opacity: 0;
@@ -226,6 +240,20 @@
     border-radius: 40px;
     transition: var(--main-transition-function);
     padding: 97px 64px 64px 64px;
+  }
+  .modal-window::after {
+    content: '';
+    width: 265px;
+    height: 265px;
+    top: 75px;
+    left: 96px;
+    background: #91afba;
+    opacity: 0.6;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    transform: rotate(45deg);
+    z-index: -1;
   }
   .is-hidden {
     visibility: hidden;
@@ -375,6 +403,20 @@
     border-radius: 40px;
     transition: var(--main-transition-function);
     padding: 97px 64px 64px 64px;
+  }
+  .modal-window::after {
+    content: '';
+    width: 265px;
+    height: 265px;
+    top: 75px;
+    left: 96px;
+    background: #91afba;
+    opacity: 0.6;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    transform: rotate(45deg);
+    z-index: -1;
   }
   .is-hidden {
     visibility: hidden;
