@@ -85,7 +85,7 @@
     display: block;
 }
 
-.mbmenu-list {
+.mbmenu-nav-list {
     display: flex;
     flex-direction: column;
     gap: 14px;
@@ -94,7 +94,7 @@
     margin-top: 140px;
 }
 
-.mbmenu-list-item {
+.mbmenu-nav-list-item-link {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.18;
@@ -103,8 +103,8 @@
     transition: color var(--main-transition-function);
 }
 
-.mbmenu-list-item:focus,
-.mbmenu-list-item:active {
+.mbmenu-nav-list-item-link:focus,
+.mbmenu-nav-list-item-link:active {
     color: var(--light-grn-cl);
 }
 
