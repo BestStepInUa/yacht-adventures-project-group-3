@@ -28,7 +28,6 @@
   }
   .rent-yacht-input::placeholder,
   .rent-yacht-textarea::placeholder {
-    font-size: 16px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: -0.045em;
@@ -198,7 +197,6 @@
   }
   .rent-yacht-input::placeholder,
   .rent-yacht-textarea::placeholder {
-    font-size: 16px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: -0.045em;
@@ -263,8 +261,6 @@
   .modal-p {
     width: 442px;
     height: 88px;
-    font-size: 16px;
-    font-weight: 400;
     line-height: 1.4;
     letter-spacing: -0.02em;
   }
@@ -321,7 +317,7 @@
   }
   .rent-yacht-input::placeholder,
   .rent-yacht-textarea::placeholder {
-    font-size: 16px;
+    color: var(--white-cl);
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: -0.045em;
@@ -414,8 +410,6 @@
   .modal-p {
     width: 442px;
     height: 88px;
-    font-size: 16px;
-    font-weight: 400;
     line-height: 1.4;
     letter-spacing: -0.02em;
   }
