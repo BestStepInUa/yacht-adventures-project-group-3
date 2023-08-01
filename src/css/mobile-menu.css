@@ -60,7 +60,7 @@
     left: -149px;
     border-radius: 279px;
     opacity: 0.6000000238418579;
-    background: var(--background-spots-1);
+    background: var(--light-blur-first-cl);
     filter: blur(100px);
     display: none;
 }
@@ -75,7 +75,7 @@
     left: 110px;
     border-radius: 279px;
     opacity: 0.8999999761581421;
-    background: var(--background-spots-2);
+    background: var(--light-blur-second-cl);
     filter: blur(100px);
     display: none;
 }
