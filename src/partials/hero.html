@@ -15,42 +15,46 @@
       <div class="card-client">
         <ul class="card-list list">
           <li class="card-item">
-            <img
-              class="client-img img1"
-              src="../img/hero/img-1@1x.jpg"
-              srcset="../img/hero/img-1@1x.jpg 1x, ../img/hero/img-1@1x.jpg 2x"
-              alt="Portrait of client"
-              width="56"
-            />
+            <picture>
+              <source
+                srcset="./img/hero/img-1_mobile@1x.jpg 1x, ./img/hero/img-1_mobile@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source srcset="./img/hero/img-1_tablet@1x.jpg 1x, ../img/hero/img-1_tablet@1x.jpg 2x" />
+              <img class="client-img img1" src="./img/hero/img-1_tablet@1x.jpg" alt="Portrait of the client" />
+            </picture>
           </li>
           <li class="card-item">
-            <img
-              class="client-img img2"
-              src="../img/hero/img-2@1x.jpg"
-              srcset="../img/hero/img-2@1x.jpg 1x, ../img/hero/img-2@1x.jpg 2x"
-              alt="Portrait of client"
-              width="56"
-            />
+            <picture>
+              <source
+                srcset="./img/hero/img-2_mobile@1x.jpg 1x, ./img/hero/img-2_mobile@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source srcset="./img/hero/img-2_tablet@1x.jpg 1x, ../img/hero/img-2_tablet@1x.jpg 2x" />
+              <img class="client-img img2" src="./img/hero/img-2_tablet@1x.jpg" alt="Portrait of the client" />
+            </picture>
           </li>
           <li class="card-item">
-            <img
-              class="client-img img3"
-              src="../img/hero/img-3@1x.jpg"
-              srcset="../img/hero/img-3@1x.jpg 1x, ../img/hero/img-3@1x.jpg 2x"
-              alt="Portrait of client"
-              width="56"
-            />
+            <picture>
+              <source
+                srcset="./img/hero/img-3_mobile@1x.jpg 1x, ./img/hero/img-3_mobile@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source srcset="./img/hero/img-3_tablet@1x.jpg 1x, ../img/hero/img-3_tablet@1x.jpg 2x" />
+              <img class="client-img img3" src="./img/hero/img-3_tablet@1x.jpg" alt="Portrait of the client" />
+            </picture>
           </li>
         </ul>
         <p class="text-clients">OUR CLIENTS</p>
       </div>
-      <img
-        class="card-img"
-        src="../img/hero/img-4@1x.png"
-        srcset="../img/hero/img-4@1x.png 1x, ../img/hero/img-4@1x.png 2x"
-        alt="Yacht"
-        width="378"
-      />
+      <picture>
+        <source
+          srcset="./img/hero/img-4_mobile@1x.png 1x, ./img/hero/img-4_mobile@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source srcset="./img/hero/img-4_tablet@1x.png 1x, ../img/hero/img-4_tablet@1x.png 2x" />
+        <img class="card-img" src="./img/hero/img-4_tablet@1x.png" alt="Yacht" />
+      </picture>
       <ul class="text-list">
         <li class="text-item">
           <p class="price">&#36;12M</p>
@@ -59,13 +63,14 @@
           <p class="add-text">Book now and make your dream yacht rental a reality</p>
         </li>
       </ul>
-      <img
-        class="owner-img"
-        src="../img/hero/img-5@1x.jpg"
-        srcset="../img/hero/img-5@1x.jpg 1x, ../img/hero/img-5@1x.jpg 2x"
-        alt="The owner of the yacht"
-        width="233"
-      />
+      <picture>
+        <source
+          srcset="./img/hero/img-5_mobile@1x.jpg 1x, ./img/hero/img-5_mobile@2x.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <source srcset="./img/hero/img-5_tablet@1x.jpg 1x, ../img/hero/img-5_tablet@1x.jpg 2x" />
+        <img class="owner-img" src="./img/hero/img-5_tablet@1x.jpg" alt="The owner of the yacht" />
+      </picture>
     </div>
   </div>
 </section>

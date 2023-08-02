@@ -1,4 +1,21 @@
-
+:root {
+    /* Colors */
+    --black-cl: #11131f;
+    --dark-cl: #1f212d;
+    --light-grn-cl: #93abae;
+    --light-blur-first-cl: #91afba;
+    --light-blur-second-cl: #939cac;
+    --white-cl: #f6f5ef;
+    --hover-cl: #88b3b9;
+    --grey-cl: rgba(246, 245, 239, 0.5);
+    --linear-gradient: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
+    /* The main number of elements in Flexbox grid */
+    --items: 3;
+    /* The main gap indent in Flexbox grid */
+    --indent: 16px;
+    /* Transition settings */
+    --main-transition-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 @media only screen and (max-width: 767px) {
     .hero {
         padding-top: 40px;
@@ -64,9 +81,9 @@
 @media only screen and (min-width: 768px) {
     .span-title {
         background: var(--linear-gradient);
-        background-clip: text;
+        /*background-clip: text;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;*/
         font-size: 60px;
         font-style: italic;
         font-weight: 500;
@@ -77,9 +94,9 @@
 @media only screen and (min-width: 1280px) {
     .span-title {
         background: var(--linear-gradient);
-        background-clip: text;
+        /*background-clip: text;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;*/
         font-size: 60px;
         font-style: italic;
         font-weight: 500;
@@ -128,6 +145,7 @@
     background-color: #93ABAE;
     padding: 14px 28px;
     border: none;
+    transition: background-color var(--main-transition-function);
     
 }
 
@@ -149,23 +167,37 @@
     border-radius: 60px;
     border: 1px solid var(--white-cl);
     padding: 14px 28px;
+    transition: color var(--main-transition-function);
+    transition: border-color var(--main-transition-function);
 }
 @media only screen and (max-width: 767px) {
     .primery-btn {
         font-size: 14px;
     }
 }
-.primery-btn:hover,
+.primery-btn:hover {
+    color: var(--light-grn-cl);
+    border-color: var(--light-grn-cl);
+}
 .primery-btn:focus {
     color: var(--light-grn-cl);
+    border-color: var(--light-grn-cl);
+}
+/*.селекторХ {
+    color: first-color;
+    transition: color var(--змінна з рут);
 }
 
+.селекторХ:hover,
+селекторХ:focus {
+    color: second-color;
+}*/
 .card-set {
     position: relative;
     width: 426px;
     height: 598px;
     margin-top: 64px;
-    background-image: url(../img/hero/img-6.png);
+    background-image: url(/img/hero/img-6.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
