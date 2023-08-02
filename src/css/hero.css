@@ -1,4 +1,21 @@
-   
+   :root {
+       /* Colors */
+       --black-cl: #11131f;
+       --dark-cl: #1f212d;
+       --light-grn-cl: #93abae;
+       --light-blur-first-cl: #91afba;
+       --light-blur-second-cl: #939cac;
+       --white-cl: #f6f5ef;
+       --hover-cl: #88b3b9;
+       --grey-cl: rgba(246, 245, 239, 0.5);
+       --linear-gradient: linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%);
+       /* The main number of elements in Flexbox grid */
+       --items: 3;
+       /* The main gap indent in Flexbox grid */
+       --indent: 16px;
+       /* Transition settings */
+       --main-transition-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
 @media only screen and (max-width: 767px) {
     .hero {
         padding-top: 40px;
@@ -20,56 +37,50 @@
 }     
 @media only screen and (max-width: 767px) {
     .hero-title {
-        color: var(--white, #F6F5EF);
+        color: var(--white-cl);
         font-size: 36px;
-        font-style: normal;
         font-weight: 500;
         line-height: 1.1;
-        letter-spacing: -1.62px;
+        letter-spacing: -0.04em;
         margin-bottom: 14px;
     }
 }
 @media only screen and (min-width: 768px) {
     .hero-title {
-        color: var(--white, #F6F5EF);
+        color: var(--white-cl);
         font-size: 60px;
-        font-style: normal;
         font-weight: 500;
         line-height: 1.1;
-        letter-spacing: -2.7px;
+        letter-spacing: -0.04em;
         margin-bottom: 16px;
     }
 }
 @media only screen and (min-width: 1280px) {
     .hero-title {
-        color: var(--white, #F6F5EF);
+        color: var(--white-cl);
         font-size: 60px;
         font-weight: 500;
         line-height: 1.1;
-        letter-spacing: -2.7px;
+        letter-spacing: -0.04em;
         padding-top: 132px;
         padding-bottom: 16px;
     }
 }
-.span-title {
-
-}
 @media only screen and (max-width: 767px) {
     .span-title {
-        background: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+        background: var(--linear-gradient);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 36px;
-        font-style: normal;
         font-weight: 500;
         line-height: 1.1;
-        letter-spacing: -1.62px;
+        letter-spacing: 0.04em;
     }
 }
 @media only screen and (min-width: 768px) {
     .span-title {
-        background: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+        background: var(--linear-gradient);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -77,12 +88,12 @@
         font-style: italic;
         font-weight: 500;
         line-height: 1.1;
-        letter-spacing: -2.7px;
+        letter-spacing: -0.04em;
     }
 }
 @media only screen and (min-width: 1280px) {
     .span-title {
-        background: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+        background: var(--linear-gradient);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -90,56 +101,50 @@
         font-style: italic;
         font-weight: 500;
         line-height: 1.1;
-        letter-spacing: -2.7px;
+        letter-spacing: 0.04em;
     }
 }
 @media only screen and (max-width: 767px) {
     .hero-text {
-        color: var(--white, #F6F5EF);
+        color: var(--white-cl);
         font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
         line-height: 1.4;
-        letter-spacing: -0.28px;
+        letter-spacing: -0.02em;
         margin-bottom: 24px;
     }
 }
 @media only screen and (min-width: 768px) {
     .hero-text {
-        color: var(--white, #F6F5EF);
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
+        color: var(--white-cl);
         line-height: 1.4;
-        letter-spacing: -0.32px;
+        letter-spacing: -0.02em;
         margin-bottom: 32px;
     }
 }
 @media only screen and (min-width: 1280px) {
     .hero-text {
         max-width: 539px;
-        color: var(--white, #F6F5EF);
-        font-size: 16px;
+        color: var(--white-cl);
         line-height: 1.4;
-        letter-spacing: -0.32px;
+        letter-spacing: -0.02em;
         padding-bottom: 32px;
     }
 }
-.btn {}
 .btn-block {
     display: flex;
     align-items: flex-start;
     gap: 10px;
 }
 .accent-btn {
-    color: var(--white, #F6F5EF);
+    color: var(--white-cl);
     font-size: 18px;
     font-weight: 700;
     line-height: 1.1;
-    letter-spacing: -0.81px;
+    letter-spacing: -0.04em;
     border-radius: 60px;
     background-color: #93ABAE;
     padding: 14px 28px;
+    border: none;
     
 }
 
@@ -150,16 +155,16 @@
 }    
 .accent-btn:hover,
 .accent-btn:focus {
-    background-color: #88B3B9;
+    background-color: var(--hover-cl);
 }
 .primery-btn {
-    color: var(--white, #F6F5EF);
+    color: var(--white-cl);
     font-size: 18px;
     font-weight: 700;
     line-height: 1.1;
-    letter-spacing: -0.81px;
+    letter-spacing: -0.04em;
     border-radius: 60px;
-    border: 1px solid var(--white, #F6F5EF);
+    border: 1px solid var(--white-cl);
     padding: 14px 28px;
 }
 @media only screen and (max-width: 767px) {
@@ -169,10 +174,10 @@
 }
 .primery-btn:hover,
 .primery-btn:focus {
-    color: #93ABAE;
+    color: var(--light-grn-cl);
 }
 
-.card {
+.card-set {
     position: relative;
     width: 426px;
     height: 598px;
@@ -184,7 +189,7 @@
     border-radius: 20px;
 }
 @media only screen and (max-width: 767px) {
-     .card {  
+     .card-set {  
         width: 335px;
         height: 427px;
         margin: 0 auto;
@@ -193,7 +198,7 @@
     }    
 }
 @media only screen and (min-width: 768px) {
-    .card {
+    .card-set {
         padding-bottom: 50px;
     }
 }
@@ -221,9 +226,50 @@
     }
 }
 .client-img {
+    position: absolute;
     border-radius: 56px;
-    border: 2px solid #93ABAE;
+    border: 2px solid var(--light-grn-cl);
 }
+
+.img1 {
+    z-index: 3;
+    top: 12px;
+    left: 30px;
+}
+.img2 {
+    z-index: 2;
+    top: 12px;
+    left: 77px;
+}
+.img3 {
+    z-index: 1;
+    top: 12px;
+    left: 124px;
+}
+@media only screen and (max-width: 767px) {
+    .img1 {
+            z-index: 3;
+            top: 12px;
+            left: 25px;
+        }
+    
+        .img2 {
+            z-index: 2;
+            top: 12px;
+            left: 65px;
+        }
+    
+        .img3 {
+            z-index: 1;
+            top: 12px;
+            left: 105px;
+        }
+}
+.client-img:hover,
+.client-img:focus {
+    border: 2px solid rgb(32, 113, 242);
+}
+
 @media only screen and (max-width: 767px) {
     .client-img {
         width: 48px;
@@ -232,12 +278,13 @@
     }
 }
 .text-clients {
-    color: #11131F;
+    color: var(--black-cl);
     font-size: 14px;
     font-weight: 700;
     line-height: 1.1;
-    letter-spacing: 0.56px;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
+    margin-top: 35px;
     
 }
 
@@ -249,11 +296,19 @@
 }
 @media only screen and (max-width: 767px) {
     .card-img {
-    max-width: 287px;
-    padding-bottom: 14px;
+       max-width: 287px;
+       padding-top: 32px;
+       padding-bottom: 18px;
+    
     }
 }
-
+@media only screen and (min-width: 768px) {
+    .card-img {
+        max-width: 378px;
+        padding-top: 40px;
+        padding-bottom: 22px;
+    }
+}
 .text-list {
     display: flex;
     justify-content: center;
@@ -261,32 +316,40 @@
     gap: 14px;
 }
 
-.text-item {}
-
 .price {
     padding-left: 37px;
-    color: #11131F;
+    color: var(--black-cl);
     font-size: 60px;
     line-height: 1.1;
-    letter-spacing: -2.7px;
+    letter-spacing: -0.04em;
     text-transform: uppercase;
 }
 @media only screen and (max-width: 767px) {
     .price {
-        font-size: 60px;
-        letter-spacing: -2.7px;
+        font-size: 46px;
+        padding-left: 24px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .price {
+        padding-left: 37px;
     }
 }
 .add-text {
-    color: #11131F;
+    color: var(--black-cl);
     font-size: 18px;
     line-height: 1.1;
-    letter-spacing: -0.81px;
+    letter-spacing: -0.04em;
 }
 @media only screen and (max-width: 767px) {
-    .price {
-        font-size: 48px;
-        letter-spacing: -2.16px;
+    .add-text {
+        font-size: 14px;
+        padding-right: 24px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .add-text {
+        padding-right: 37px;
     }
 }
 .owner-img {
