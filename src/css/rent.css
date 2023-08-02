@@ -57,6 +57,13 @@
     margin-top: 24px;
     color: var(--white-cl);
     background-color: inherit;
+    transition: background-color 0.5s ease;
+  }
+  .rent-yacht-send-button:hover {
+    background: var(--hover-cl);
+  }
+  .rent-yacht-send-button:focus {
+    background: var(--hover-cl);
   }
   .send-arrows-icon {
     fill: var(--white-cl);
@@ -208,6 +215,13 @@
     margin-top: 32px;
     color: var(--white-cl);
     background-color: inherit;
+    transition: background-color 0.5s ease;
+  }
+  .rent-yacht-send-button:hover {
+    background: var(--hover-cl);
+  }
+  .rent-yacht-send-button:focus {
+    background: var(--hover-cl);
   }
   .rent-yacht-input::placeholder,
   .rent-yacht-textarea::placeholder {
@@ -373,6 +387,13 @@
     margin-top: 64px;
     color: var(--white-cl);
     background-color: inherit;
+    transition: background-color 0.5s ease;
+  }
+  .rent-yacht-send-button:hover {
+    background: var(--hover-cl);
+  }
+  .rent-yacht-send-button:focus {
+    background: var(--hover-cl);
   }
   .send-arrows-icon {
     fill: var(--white-cl);
