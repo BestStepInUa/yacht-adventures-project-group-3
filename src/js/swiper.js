@@ -1,5 +1,6 @@
-function initSwiper(slidesPerView, spaceBetween, autoplayDelay, direction) {
-    return new Swiper('.swiper', {
+function initSwiper(slidesPerView, spaceBetween, autoplayDelay) {
+  return new Swiper('.swiper', {
+      direction: 'horizontal',
       slidesPerView: slidesPerView,
       spaceBetween: spaceBetween,
       speed: 1000,
@@ -46,15 +47,15 @@ function initSwiper(slidesPerView, spaceBetween, autoplayDelay, direction) {
     if (mediaQuery1280.matches) {
       // Desktop
       if (swiper) swiper.destroy(true, true);
-      swiper = initSwiper(3, 16, 3000, 'horizontal');
+      swiper = initSwiper(3, 32, 3000);
     } else if (mediaQuery768.matches) {
       // Tablet
       if (swiper) swiper.destroy(true, true);
-      swiper = initSwiper(2, 16, 3000, 'horizontal');
+      swiper = initSwiper(2, 16, 3000);
     } else if (mediaQuery375.matches) {
       // Mobile
       if (swiper) swiper.destroy(true, true);
-      swiper = initSwiper(1, 8, 3000, 'horizontal');
+      swiper = initSwiper(1, 8, 3000);
     }
   };
 
