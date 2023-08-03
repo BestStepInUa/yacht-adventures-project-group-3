@@ -1,0 +1,35 @@
+@media only screen and (min-width: 768px) {
+  .services-caption {
+    font-size: 18px;
+  }
+}
+
+.services-spot {
+  position: absolute;
+  top: 306px;
+  left: -219px;
+  width: 323px;
+  height: 323px;
+  transform: rotate(-45deg);
+  z-index: -1;
+
+  border-radius: 50%;
+  opacity: 0.6;
+  background: #91afba;
+  filter: blur(100px);
+}
+
+@media only screen and (min-width: 768px) {
+  .services-spot {
+    top: 566px;
+    width: 414px;
+    height: 414px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .services-spot {
+    top: 231px;
+    width: -213px;
+  }
+}
