@@ -5,10 +5,11 @@
 .curved-lines-bg {
   position: absolute;
   top: 10%;
-  right: 0;
+  right: 16px;
   z-index: -2;
   width: 1509px;
   height: 1616px;
+  transform: rotate(8deg);
 }
 
 @media only screen and (max-width: 1279.98px) {
@@ -248,6 +249,7 @@
     display: none;
   }
 }
+
 .yb-img {
   width: 299px;
   height: 251px;
@@ -255,6 +257,20 @@
   background: url(<path-to-image>), lightgray -6.748px 0px / 115.615% 106.773% no-repeat;
   text-align: center;
 }
+
+@media only screen and (min-width: 768px) {
+  .yb-img {
+    width: 312px;
+    height: 268px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .yb-img {
+    width: 322px;
+  }
+}
+
 .yaht-info {
   display: inline-flex;
   justify-content: space-between;

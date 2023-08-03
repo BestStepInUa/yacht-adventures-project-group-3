@@ -27,40 +27,6 @@ a {
   color: currentColor;
 }
 
-.container {
-  min-width: 320px;
-  max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 20px;
-  padding-left: 20px;
-
-  /* outline: 2px solid red; */
-  outline-offset: -2px;
-}
-
-/*-----Tablet screen----*/
-@media only screen and (min-width: 768px) {
-  .container {
-    min-width: 768px;
-    /* outline: 2px solid green; */
-    outline-offset: -2px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-/*----- Desktop screen--*/
-@media only screen and (min-width: 1280px) {
-  .container {
-    min-width: 1280px;
-    /* outline: 2px solid goldenrod; */
-    outline-offset: -2px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
 .about {
   padding-top: 40px;
 }
