@@ -262,6 +262,8 @@
   margin: 0 4px;
   opacity: 0.6;
   cursor: pointer;
+  background-color: var(--dark-cl);
+  filter: drop-shadow(2px 1px 3px rgba(24, 55, 91, 0.2));
 }
 
 .swiper-pagination-bullet-active {
@@ -279,10 +281,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .swiper-horizontal > .swiper-pagination-bullets,
-  .swiper-pagination-bullets.swiper-pagination-horizontal,
-  .swiper-pagination-custom,
-  .swiper-pagination-fraction {
-    visibility: hidden;
+  .swiper-pagination {
+    display: none;
   }
 }
