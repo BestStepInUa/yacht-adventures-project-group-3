@@ -17,12 +17,17 @@
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .adventures-title-container {
+    margin-bottom: 64px;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .adventures-title-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 64px;
   }
 }
 
@@ -99,13 +104,7 @@
     font-size: 16px;
     width: 274px;
     margin-left: 431px;
-    margin-bottom: 64px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .adventures-text {
-    margin: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -284,4 +283,22 @@
   .swiper-pagination {
     display: none;
   }
+}
+
+.btn-up {
+  background-color: #93abae;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 44px;
+  height: 44px;
+
+  border: inherit;
+  border-radius: 32%;
+}
+
+.btn-icon-up {
+  fill: var(--white-cl);
+  stroke: var(--white-cl);
 }
