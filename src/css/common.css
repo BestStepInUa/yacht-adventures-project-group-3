@@ -3,6 +3,8 @@
   --black-cl: #11131f;
   --dark-cl: #1f212d;
   --light-grn-cl: #93abae;
+  --light-blur-first-cl: #91afba;
+  --light-blur-second-cl: #939cac;
   --white-cl: #f6f5ef;
   --hover-cl: #88b3b9;
   --grey-cl: rgba(246, 245, 239, 0.5);
@@ -31,6 +33,20 @@ body {
   font-weight: normal;
   font-size: 16px;
   font-family: 'DM Sans', sans-serif;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  outline: 0;
+  outline-offset: 0;
 }
 /* Base styles for mobile devices */
 .container {
