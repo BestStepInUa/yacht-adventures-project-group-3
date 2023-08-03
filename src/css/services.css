@@ -1,35 +1,122 @@
+.services-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
 @media only screen and (min-width: 768px) {
-  .services-caption {
-    font-size: 18px;
+  .services-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
-.services-spot {
+@media only screen and (min-width: 1280px) {
+  .services-container {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+}
+
+.services-container::after {
+  content: '';
   position: absolute;
-  top: 306px;
-  left: -219px;
+  top: 360px;
+  right: 250px;
+  z-index: -1;
   width: 323px;
   height: 323px;
-  transform: rotate(-45deg);
-  z-index: -1;
-
   border-radius: 50%;
+  background-color: var(--light-blur-first-cl);
   opacity: 0.6;
-  background: #91afba;
   filter: blur(100px);
+  transform: rotate(-45deg);
 }
 
 @media only screen and (min-width: 768px) {
-  .services-spot {
-    top: 566px;
+  .services-container::after {
+    top: 565px;
+    right: 622px;
     width: 414px;
     height: 414px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .services-spot {
-    top: 231px;
-    width: -213px;
+  .services-container::after {
+    top: 315px;
+    right: 1078px;
+  }
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .services-list {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .services-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .item2 {
+    margin-left: 304px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .item2 {
+    margin-left: 0;
+    margin-top: 204px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .item3 {
+    margin-left: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .item3 {
+    margin-left: 340px;
+  }
+}
+
+.services-picture {
+  position: relative;
+}
+
+.services-caption {
+  background-color: var(--white-cl);
+  color: var(--black-cl);
+  padding: 14px 28px;
+  border: none;
+  border-radius: 60px;
+  font-weight: 700;
+  position: absolute;
+  z-index: 1;
+  bottom: 24px;
+  left: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .services-caption {
+    font-size: 18px;
+    bottom: 32px;
+    left: 32px;
   }
 }
