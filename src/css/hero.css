@@ -193,9 +193,7 @@
         
     }       
 }
-.card-item {
-    
-}
+
 @media only screen and (max-width: 767px) {
     .card-item {
         padding-top: 24px;
