@@ -21,8 +21,12 @@ const phonePattern = /^\+?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
-    isValid === true && 
-    refs.modal.classList.toggle("is-hidden");  
+    if (isValid) {
+      refs.modal.classList.toggle("is-hidden");
+      if (!refs.modal.classList.contains("is-hidden")) {
+        playSoundIfFieldsFilled();
+      }
+    }
   }
   
   function submitForm(event) {
@@ -30,46 +34,62 @@ const phonePattern = /^\+?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
   }
 
   function validateInput() {
-    const inputName = document.getElementById("user-name") 
-    const inputEmail = document.getElementById("user-email") 
-    const inputPhone = document.getElementById("user-phone") 
+    const inputName = document.getElementById("user-name");
+    const inputEmail = document.getElementById("user-email");
+    const inputPhone = document.getElementById("user-phone");
 
+    const inputNameValue = inputName.value.trim();
+    const inputEmailValue = inputEmail.value.trim();
+    const inputPhoneValue = inputPhone.value.trim();
 
-    const inputNameValue = inputName.value.trim()
-    const inputEmailValue = inputEmail.value.trim()
-    const inputPhoneValue = inputPhone.value.trim()
-    
-    if (inputNameValue.length < minLength || inputEmailValue.length > maxLength || inputEmailValue.length < minLength || inputPhoneValue.length > maxLength || inputPhoneValue.length < minLength || inputNameValue.length > maxLength) {
+    if (
+      inputNameValue.length < minLength ||
+      inputEmailValue.length > maxLength ||
+      inputEmailValue.length < minLength ||
+      inputPhoneValue.length > maxLength ||
+      inputPhoneValue.length < minLength ||
+      inputNameValue.length > maxLength
+    ) {
       isValid = false;
-    }
-    else {
-      console.log(inputNameValue)
+    } else {
       isValid = true;
     }
 
     if (!namePattern.test(inputNameValue)) {
       isValid = false;
-      inputName.classList.add('error-border')
-    }
-    else {
-      inputName.classList.remove('error-border')
+      inputName.classList.add('error-border');
+    } else {
+      inputName.classList.remove('error-border');
     }
 
     if (!emailPattern.test(inputEmailValue)) {
       isValid = false;
-      inputEmail.classList.add('error-border')
-    }
-     else {
-      inputEmail.classList.remove('error-border')
+      inputEmail.classList.add('error-border');
+    } else {
+      inputEmail.classList.remove('error-border');
     }
 
     if (!phonePattern.test(inputPhoneValue)) {
       isValid = false;
-      inputPhone.classList.add('error-border')
+      inputPhone.classList.add('error-border');
+    } else {
+      inputPhone.classList.remove('error-border');
     }
+  }
 
-    
-console.log(isValid)
-}
+  function playSoundIfFieldsFilled() {
+    const inputName = document.getElementById("user-name");
+    const inputEmail = document.getElementById("user-email");
+    const inputPhone = document.getElementById("user-phone");
 
+    const inputNameValue = inputName.value.trim();
+    const inputEmailValue = inputEmail.value.trim();
+    const inputPhoneValue = inputPhone.value.trim();
+
+    if (inputNameValue !== "" && inputEmailValue !== "" && inputPhoneValue !== "") {
+      const clickSound = document.getElementById("clickSound");
+      clickSound.currentTime = 0;
+      clickSound.play();
+    }
+  }
 })();
