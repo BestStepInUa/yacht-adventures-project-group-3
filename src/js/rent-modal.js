@@ -1,95 +1,112 @@
-let isValid = false;
-const minLength = 2;
-const maxLength = 30;
-const namePattern = /^[A-Za-z]+(?:\s[A-Za-z]+)?$/;
-const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const phonePattern = /^\+?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
+    let isValid = false;
+    const minLength = 2;
+    const maxLength = 30;
+    const namePattern = /^[A-Za-z]+(?:\s[A-Za-z]+)?$/;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phonePattern = /^\+?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
 
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-    modal: document.querySelector("[data-modal]"),
-  };
+    (() => {
+      const refs = {
+        openModalBtn: document.querySelector("[data-modal-open]"),
+        closeModalBtn: document.querySelector("[data-modal-close]"),
+        modal: document.querySelector("[data-modal]"),
+      };
 
-  refs.openModalBtn.addEventListener("click", (event) => {
-    event.preventDefault(); 
-    validateInput();
-    toggleModal();
-  });
+      refs.openModalBtn.addEventListener("click", (event) => {
+        event.preventDefault();
+        validateInput();
+        submitForm(event);
+      });
 
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+      refs.closeModalBtn.addEventListener("click", toggleModal);
 
-  function toggleModal() {
-    if (isValid) {
-      refs.modal.classList.toggle("is-hidden");
-      if (!refs.modal.classList.contains("is-hidden")) {
-        playSoundIfFieldsFilled();
+      function toggleModal() {
+        if (isValid) {
+          refs.modal.classList.toggle("is-hidden");
+          if (!refs.modal.classList.contains("is-hidden")) {
+            playSoundIfFieldsFilled();
+          }
+        }
       }
-    }
-  }
-  
-  function submitForm(event) {
-    event.preventDefault(); 
-  }
 
-  function validateInput() {
-    const inputName = document.getElementById("user-name");
-    const inputEmail = document.getElementById("user-email");
-    const inputPhone = document.getElementById("user-phone");
+      function submitForm(event) {
+        event.preventDefault();
+        if (isValid) {
+          // Your submission logic here (you can make an API call or any other actions needed)
+          // ...
 
-    const inputNameValue = inputName.value.trim();
-    const inputEmailValue = inputEmail.value.trim();
-    const inputPhoneValue = inputPhone.value.trim();
+          // Clear form inputs after successful submission
+          clearFormInputs();
 
-    if (
-      inputNameValue.length < minLength ||
-      inputEmailValue.length > maxLength ||
-      inputEmailValue.length < minLength ||
-      inputPhoneValue.length > maxLength ||
-      inputPhoneValue.length < minLength ||
-      inputNameValue.length > maxLength
-    ) {
-      isValid = false;
-    } else {
-      isValid = true;
-    }
+          // Show the modal or do any other actions you want after successful submission
+          toggleModal();
+        }
+      }
 
-    if (!namePattern.test(inputNameValue)) {
-      isValid = false;
-      inputName.classList.add('error-border');
-    } else {
-      inputName.classList.remove('error-border');
-    }
+      function clearFormInputs() {
+        const form = document.getElementById("rent-yacht-form");
+        form.reset();
+      }
 
-    if (!emailPattern.test(inputEmailValue)) {
-      isValid = false;
-      inputEmail.classList.add('error-border');
-    } else {
-      inputEmail.classList.remove('error-border');
-    }
+      function validateInput() {
+        const inputName = document.getElementById("user-name");
+        const inputEmail = document.getElementById("user-email");
+        const inputPhone = document.getElementById("user-phone");
 
-    if (!phonePattern.test(inputPhoneValue)) {
-      isValid = false;
-      inputPhone.classList.add('error-border');
-    } else {
-      inputPhone.classList.remove('error-border');
-    }
-  }
+        const inputNameValue = inputName.value.trim();
+        const inputEmailValue = inputEmail.value.trim();
+        const inputPhoneValue = inputPhone.value.trim();
 
-  function playSoundIfFieldsFilled() {
-    const inputName = document.getElementById("user-name");
-    const inputEmail = document.getElementById("user-email");
-    const inputPhone = document.getElementById("user-phone");
+        if (
+          inputNameValue.length < minLength ||
+          inputEmailValue.length > maxLength ||
+          inputEmailValue.length < minLength ||
+          inputPhoneValue.length > maxLength ||
+          inputPhoneValue.length < minLength ||
+          inputNameValue.length > maxLength
+        ) {
+          isValid = false;
+        } else {
+          isValid = true;
+        }
 
-    const inputNameValue = inputName.value.trim();
-    const inputEmailValue = inputEmail.value.trim();
-    const inputPhoneValue = inputPhone.value.trim();
+        if (!namePattern.test(inputNameValue)) {
+          isValid = false;
+          inputName.classList.add('error-border');
+        } else {
+          inputName.classList.remove('error-border');
+        }
 
-    if (inputNameValue !== "" && inputEmailValue !== "" && inputPhoneValue !== "") {
-      const clickSound = document.getElementById("clickSound");
-      clickSound.currentTime = 0;
-      clickSound.play();
-    }
-  }
-})();
+        if (!emailPattern.test(inputEmailValue)) {
+          isValid = false;
+          inputEmail.classList.add('error-border');
+        } else {
+          inputEmail.classList.remove('error-border');
+        }
+
+        if (!phonePattern.test(inputPhoneValue)) {
+          isValid = false;
+          inputPhone.classList.add('error-border');
+        } else {
+          inputPhone.classList.remove('error-border');
+        }
+      }
+
+      function playSoundIfFieldsFilled() {
+        const inputName = document.getElementById("user-name");
+        const inputEmail = document.getElementById("user-email");
+        const inputPhone = document.getElementById("user-phone");
+
+        const inputNameValue = inputName.value.trim();
+        const inputEmailValue = inputEmail.value.trim();
+        const inputPhoneValue = inputPhone.value.trim();
+
+        if (inputNameValue !== "" && inputEmailValue !== "" && inputPhoneValue !== "") {
+          // Replace this with your sound-playing logic
+          // For simplicity, we'll assume an HTML5 audio element with ID "clickSound"
+          const clickSound = document.getElementById("clickSound");
+          clickSound.currentTime = 0;
+          clickSound.play();
+        }
+      }
+    })();

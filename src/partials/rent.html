@@ -9,7 +9,7 @@
           srcset="./img/rent/img-rent-yacht@1x.png 1x, ./img/rent/img-rent-yacht@2x.png 2x"
         />
         <source
-          media="(min-width:320px)"
+          media="(max-width:767px)"
           srcset="./img/rent/img-rent-yacht-mobile@1x.png 1x, ./img/rent/img-rent-yacht-mobile@2x.png 2x"
         />
         <img src="./img/rent/img-rent-yacht@1x.png" alt="Rent a yacht now" class="rent-yacht-image" />
@@ -17,7 +17,7 @@
     </div>
     <!-- Form  -->
     <div class="rent-yacht-form-container" id="rent-form">
-      <form class="rent-yacht-form">
+      <form class="rent-yacht-form" id="rent-yacht-form">
         <div class="rent-yacht-form-container">
           <label for="user-name" class="rent-yacht-input-label"></label>
           <div class="rent-yacht-input-container">
@@ -74,6 +74,9 @@
             <use href="./img/icons.svg#icon-arrow-right"></use>
           </svg>
         </button>
+        <audio id="clickSound">
+          <source src="" type="audio/mpeg" />
+        </audio>
       </form>
     </div>
     <!-- Modal window  -->
@@ -87,7 +90,7 @@
         <picture>
           <source media="(min-width:768px)" srcset="./img/rent/img-modal@1x.png 1x, ./img/rent/img-modal@2x.png 2x" />
           <source
-            media="(min-width:320px)"
+            media="(max-width:767px)"
             srcset="./img/rent/img-modal-mobile@1x.png 1x, ./img/rent/img-modal-mobile@2x.png 2x"
           />
           <img src="./img/rent/img-modal@1x.png" alt="Thanks for confirming your order" class="modal-image" />
