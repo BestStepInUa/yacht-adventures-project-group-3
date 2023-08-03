@@ -13,9 +13,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     
-    <script type="module" crossorigin src="/yacht-adventures-project-group-3/assets/index-8126b397.js"></script>
-    <link rel="stylesheet" href="/yacht-adventures-project-group-3/assets/index-19a0b836.css">
+    <script type="module" crossorigin src="/yacht-adventures-project-group-3/assets/index-4a43f645.js"></script>
+    <link rel="stylesheet" href="/yacht-adventures-project-group-3/assets/index-cd561dfc.css">
   </head>
 
   <body>
@@ -245,53 +246,62 @@
   </div>
 
   <div class="feedback">
-    <ul class="adventures-list">
-      <li class="adventures-list-item">
-        <picture>
-          <source
-            srcset="/yacht-adventures-project-group-3/assets/john_tablet@1x-02c3b8b3.png 1x, /yacht-adventures-project-group-3/assets/john_tablet@2x-a24edfc8.png 2x"
-            media="(min-width: 768px)"
-          />
-          <source srcset="/yacht-adventures-project-group-3/assets/john-mob@1x-3106670f.png 1x, /yacht-adventures-project-group-3/assets/john-mob@2x-7ada2165.png 2x" />
-          <img class="img-adventures" src="/yacht-adventures-project-group-3/assets/john-mob@1x-3106670f.png" alt="John Wax" />
-        </picture>
-        <h4 class="adventures-list-item-title">John Wax</h4>
-        <p class="adventures-list-item-text">
-          I rented the Lagoon 620 with my family for a week-long vacation and it was the best decision ever. The yacht
-          was spacious, comfortable, and luxurious, and the crew took care of everything.
-        </p>
-      </li>
-      <li class="adventures-list-item">
-        <picture>
-          <source
-            srcset="/yacht-adventures-project-group-3/assets/victoria_tablet@1x-8b5ab91d.png 1x, /yacht-adventures-project-group-3/assets/victoria_tablet@2x-a5059444.png 2x"
-            media="(min-width: 768px)"
-          />
-          <source srcset="/yacht-adventures-project-group-3/assets/victoria_mob@1x-6e6b7a5a.png 1x, /yacht-adventures-project-group-3/assets/victoria_mob@2x-4129e174.png 2x" />
-          <img class="img-adventures" src="./img/adventures/image-mob@1x.png" alt="Victoria Romashenko" />
-        </picture>
-        <h4 class="adventures-list-item-title">Victoria Romashenko</h4>
-        <p class="adventures-list-item-text">
-          The Sunseeker Manhattan 66 was the perfect choice for our romantic getaway. The yacht was beautifully
-          designed, with all the amenities we needed, and the crew was attentive and friendly.
-        </p>
-      </li>
-      <li class="adventures-list-item">
-        <picture>
-          <source
-            srcset="/yacht-adventures-project-group-3/assets/ihor_tablet@1x-6c7f9c1e.png 1x, /yacht-adventures-project-group-3/assets/ihor_tablet@2x-757ba383.png 2x"
-            media="(min-width: 768px)"
-          />
-          <source srcset="data:image/png;base64,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 1x, /yacht-adventures-project-group-3/assets/ihor_mob@2x-c6eb8664.png 2x" />
-          <img class="img-adventures" src="data:image/png;base64,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" alt="Ihor Trachuk" />
-        </picture>
-        <h4 class="adventures-list-item-title">Ihor Trachuk</h4>
-        <p class="adventures-list-item-text">
-          The Azimut 80 was the most luxurious yacht I've ever been on. The cabins were spacious and elegant, and the
-          outdoor areas were perfect for relaxing and entertaining. Worth every penny!
-        </p>
-      </li>
-    </ul>
+    <div class="swiper">
+      <ul class="adventures-list swiper-wrapper">
+        <li class="adventures-list-item swiper-slide">
+          <picture>
+            <source
+              srcset="/yacht-adventures-project-group-3/assets/john_tablet@1x-02c3b8b3.png 1x, /yacht-adventures-project-group-3/assets/john_tablet@2x-a24edfc8.png 2x"
+              media="(min-width: 768px)"
+            />
+            <source srcset="/yacht-adventures-project-group-3/assets/john-mob@1x-3106670f.png 1x, /yacht-adventures-project-group-3/assets/john-mob@2x-7ada2165.png 2x" />
+            <img class="img-adventures" src="/yacht-adventures-project-group-3/assets/john-mob@1x-3106670f.png" alt="John Wax" />
+          </picture>
+          <h4 class="adventures-list-item-title">John Wax</h4>
+          <p class="adventures-list-item-text">
+            I rented the Lagoon 620 with my family for a week-long vacation and it was the best decision ever. The yacht
+            was spacious, comfortable, and luxurious, and the crew took care of everything.
+          </p>
+        </li>
+        <li class="adventures-list-item swiper-slide">
+          <picture>
+            <source
+              srcset="/yacht-adventures-project-group-3/assets/victoria_tablet@1x-8b5ab91d.png 1x, /yacht-adventures-project-group-3/assets/victoria_tablet@2x-a5059444.png 2x"
+              media="(min-width: 768px)"
+            />
+            <source srcset="/yacht-adventures-project-group-3/assets/victoria_mob@1x-6e6b7a5a.png 1x, /yacht-adventures-project-group-3/assets/victoria_mob@2x-4129e174.png 2x" />
+            <img class="img-adventures" src="./img/adventures/image-mob@1x.png" alt="Victoria Romashenko" />
+          </picture>
+          <h4 class="adventures-list-item-title">Victoria Romashenko</h4>
+          <p class="adventures-list-item-text">
+            The Sunseeker Manhattan 66 was the perfect choice for our romantic getaway. The yacht was beautifully
+            designed, with all the amenities we needed, and the crew was attentive and friendly.
+          </p>
+        </li>
+        <li class="adventures-list-item swiper-slide">
+          <picture>
+            <source
+              srcset="/yacht-adventures-project-group-3/assets/ihor_tablet@1x-6c7f9c1e.png 1x, /yacht-adventures-project-group-3/assets/ihor_tablet@2x-757ba383.png 2x"
+              media="(min-width: 768px)"
+            />
+            <source srcset="data:image/png;base64,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 1x, /yacht-adventures-project-group-3/assets/ihor_mob@2x-c6eb8664.png 2x" />
+            <img class="img-adventures" src="data:image/png;base64,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" alt="Ihor Trachuk" />
+          </picture>
+          <h4 class="adventures-list-item-title">Ihor Trachuk</h4>
+          <p class="adventures-list-item-text">
+            The Azimut 80 was the most luxurious yacht I've ever been on. The cabins were spacious and elegant, and the
+            outdoor areas were perfect for relaxing and entertaining. Worth every penny!
+          </p>
+        </li>
+      </ul>
+
+      <div class="swiper-button-prev visually-hidden"></div>
+      <div class="swiper-button-next visually-hidden"></div>
+
+      <div class="swiper-scrollbar visually-hidden"></div>
+    </div>
+
+    <div class="swiper-pagination"></div>
   </div>
 </section>
 
@@ -389,13 +399,15 @@
   </nav>
 </div>
     <!-- JS scripts -->
-    
+
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
     <!-- <script defer src="js/mobile-menu.js"></script> -->
   </body>
 </html>
