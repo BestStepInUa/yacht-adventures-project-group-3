@@ -333,7 +333,8 @@
     left: 70%;
     width: 233px;
     height: 233px;
-    border-radius: 43px;
+    border-radius: 40px;
+    
 }
 
 @media only screen and (max-width: 767px) {
