@@ -22,7 +22,7 @@
     gap: 218px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   .hero-title {
     color: var(--white-cl);
     font-size: 36px;
@@ -53,7 +53,7 @@
     padding-bottom: 16px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   .span-title {
     background: var(--linear-gradient);
     background-clip: content-box;
@@ -78,7 +78,7 @@
     letter-spacing: -0.04em;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   .hero-text {
     color: var(--white-cl);
     font-size: 14px;
@@ -121,7 +121,7 @@
   border: none;
   transition: background-color var(--main-transition-function);
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   .accent-btn {
     font-size: 14px;
   }
@@ -142,7 +142,7 @@
   transition: color var(--main-transition-function);
   transition: border-color var(--main-transition-function);
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   .primery-btn {
     font-size: 14px;
   }
@@ -166,7 +166,7 @@
   background-size: cover;
   border-radius: 20px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98x) {
   .card-set {
     width: 335px;
     height: 427px;
@@ -187,13 +187,13 @@
   padding-left: 32px;
   padding-bottom: 111px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   .card-client {
     padding-left: 24px;
     padding-bottom: 52px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   .card-item {
     padding-top: 24px;
   }
@@ -223,7 +223,7 @@
   top: 30px;
   left: 124px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   .img1 {
     z-index: 3;
     top: 12px;
@@ -240,7 +240,7 @@
     left: 105px;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   .client-img {
     width: 48px;
     height: 48px;
@@ -262,7 +262,7 @@
   padding-left: 24px;
   padding-right: 24px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   .card-img {
     max-width: 287px;
     padding-top: 32px;
@@ -290,7 +290,7 @@
   letter-spacing: -0.04em;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   .price {
     font-size: 46px;
     padding-left: 24px;
@@ -307,7 +307,7 @@
   line-height: 1.1;
   letter-spacing: -0.04em;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   .add-text {
     font-size: 14px;
     padding-right: 24px;
@@ -327,7 +327,7 @@
   height: 233px;
   border-radius: 43px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.98px) {
   .owner-img {
     width: 133px;
     height: 133px;
