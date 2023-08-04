@@ -3,6 +3,24 @@
     padding-top: 40px;
     padding-bottom: 40px;
   }
+  .rent-yacht-block {
+    position: relative;
+    overflow: hidden;
+  }
+  .rent-yacht-block::after {
+    content: '';
+    position: absolute;
+    top: 400px;
+    left: 211px;
+    z-index: -1;
+    width: 283px;
+    height: 283px;
+    border-radius: 50%;
+    background-color: var(--light-blur-first-cl);
+    opacity: 0.6;
+    filter: blur(100px);
+    transform: rotate(-45deg);
+  }
   .rent-yacht-heading {
     font-size: 36px;
     font-weight: 500;
@@ -174,6 +192,12 @@
   .rent-yacht-block {
     display: flex;
   }
+  .rent-yacht-block::after {
+    top: 125px;
+    left: 623px;
+    width: 414px;
+    height: 414px;
+  }
   .rent-yacht-section {
     display: flex;
   }
@@ -318,6 +342,10 @@
   .rent-yacht-block {
     padding-left: 183px;
     padding-right: 183px;
+  }
+  .rent-yacht-block::after {
+    top: 114px;
+    left: 1070px;
   }
   .rent-yacht-section {
     padding-top: 82px;
