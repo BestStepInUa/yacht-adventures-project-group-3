@@ -1,87 +1,17 @@
-body {
-  background-color: #11131f;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-img {
-  /* display: block;
-    max-width: 100%;
-    height: auto; */
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.list,
-ul,
-ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: currentColor;
-}
-
-.container {
-  min-width: 320px;
-  max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 20px;
-  padding-left: 20px;
-
-  /* outline: 2px solid red; */
-  outline-offset: -2px;
-}
-
-/*-----Tablet screen----*/
-@media only screen and (min-width: 768px) {
-  .container {
-    min-width: 768px;
-    /* outline: 2px solid green; */
-    outline-offset: -2px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-/*----- Desktop screen--*/
-@media only screen and (min-width: 1280px) {
-  .container {
-    min-width: 1280px;
-    /* outline: 2px solid goldenrod; */
-    outline-offset: -2px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
 .about {
+  padding-top: 40px;
 }
 
-.about-box-text {
+@media only screen and (min-width: 768px) {
+  .about {
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .about {
+    padding-top: 82px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -102,8 +32,8 @@ a {
   margin-bottom: 40px;
 }
 
-.about-yacht {
-}
+/* .about-yacht {
+} */
 
 @media only screen and (min-width: 768px) {
   .about-yacht {
@@ -201,6 +131,7 @@ a {
 .about-yacht-three {
   margin-top: 24px;
   margin-left: 75px;
+  z-index: -3;
 }
 
 @media only screen and (min-width: 768px) {
@@ -209,11 +140,23 @@ a {
     margin-top: 24px;
     margin-left: 372px;
     bottom: 113px;
+    z-index: -3;
+  }
+}
+
+.about-images {
+  height: 983px;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-images {
+    height: 1034px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .about-images {
+    height: 749px;
   }
 }
 
@@ -236,5 +179,6 @@ a {
   .about-yacht-three {
     position: relative;
     bottom: 305px;
+    z-index: -3;
   }
 }
