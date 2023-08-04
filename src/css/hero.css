@@ -270,19 +270,19 @@
     line-height: 1.1;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    margin-top: 99px;
+    margin-top: 90px;
     
 }
 @media only screen and (max-width: 767px) {
     .text-clients {
-        margin-top: 85px;
+        margin-top: 65px;
 
     }
 }
 .card-img {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 37px;
+    
 }
 @media only screen and (max-width: 767px) {
     .card-img {
