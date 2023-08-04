@@ -180,7 +180,6 @@
 @media only screen and (max-width: 767px) {
      .card-set {  
         min-width: 335px;
-        
         margin: 0 auto;
      
     }    
@@ -199,27 +198,19 @@
 }
 .card-list {
     display: flex;
-    margin-left: 37px;
-    margin-right: 37px;
-    margin-bottom: 64px;
 
-}
-@media only screen and (max-width: 767px) {
-    .card-list {
-    
-    }
 }
 .card-client {
-    
+    margin-left: 32px;
+    margin-top: 32px;
 }
-
-
-
 @media only screen and (max-width: 767px) {
-    .card-item {
-        
+    .card-client {
+        margin-left: 24px;
+        margin-top: 24px;
     }
 }
+
 .client-img {
     width: 56px;
     position: absolute;
@@ -280,18 +271,15 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     margin-top: 99px;
-    margin-left: 32px;
     
 }
 @media only screen and (max-width: 767px) {
-    .client-img {
+    .text-clients {
         margin-top: 85px;
-        margin-left: 24px;
+
     }
 }
-
 .card-img {
-    margin-top: 152px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 37px;
@@ -299,24 +287,21 @@
 @media only screen and (max-width: 767px) {
     .card-img {
        min-width: 287px;
-    
+       margin-top: 52px;
     
     }
 }
 @media only screen and (min-width: 768px) {
     .card-img {
         width: 378px;
-        margin-top: 225px;
+        margin-top: 111px;
         margin-bottom: 14px;
-        
-        
+    
     }
 }
 @media only screen and (min-width: 1280px) {
     .card-img {
-        margin-top: 152px;
-       
-
+        margin-top: 111px;
 
     }
 }
@@ -327,17 +312,20 @@
     gap: 14px;
     margin-left: auto;
     margin-right: auto;
+    margin-left: 37px;
+    margin-right: 37px;
     margin-bottom: 64px; 
+
+
     
 }
 @media only screen and (max-width: 767px) {
     .text-list {
+        margin-left: 24px;
+        margin-right: 24px;
         margin-bottom: 48px;
     }
 }    
-.text-item {
-    
-}
 .price {
     color: var(--black-cl);
     font-size: 60px;
@@ -352,11 +340,6 @@
         
     }
 }
-@media only screen and (min-width: 768px) {
-    .price {
-        
-    }
-}
 .add-text {
     color: var(--black-cl);
     font-size: 18px;
@@ -366,12 +349,6 @@
 @media only screen and (max-width: 767px) {
     .add-text {
         font-size: 14px;
-        
-    }
-}
-@media only screen and (min-width: 768px) {
-    .add-text {
-        /*max-width: 208px;*/
         
     }
 }
