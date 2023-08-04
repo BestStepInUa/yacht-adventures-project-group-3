@@ -1,5 +1,6 @@
 .yb-container {
   position: relative;
+  overflow: hidden;
 }
 
 .yacht-section {

@@ -19,6 +19,7 @@
 
 .services-container {
   position: relative;
+  overflow: hidden;
 }
 
 .services-container::after {
