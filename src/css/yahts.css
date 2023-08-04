@@ -1,16 +1,19 @@
 .yb-container {
   position: relative;
+}
+
+.yacht-section {
   padding-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
-  .yb-container {
+  .yacht-section {
     padding-bottom: 50px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .yb-container {
+  .yacht-section {
     padding-bottom: 82px;
   }
 }

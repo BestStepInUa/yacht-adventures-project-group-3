@@ -1,27 +1,30 @@
-.services-container {
+.services {
   padding-top: 40px;
   padding-bottom: 40px;
-  position: relative;
 }
 
 @media only screen and (min-width: 768px) {
-  .services-container {
+  .services {
     padding-top: 50px;
     padding-bottom: 50px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .services-container {
+  .services {
     padding-top: 82px;
     padding-bottom: 82px;
   }
 }
 
+.services-container {
+  position: relative;
+}
+
 .services-container::after {
   content: '';
   position: absolute;
-  top: 360px;
+  top: 305px;
   right: 250px;
   z-index: -1;
   width: 323px;
@@ -36,7 +39,7 @@
 @media only screen and (min-width: 768px) {
   .services-container::after {
     top: 565px;
-    right: 622px;
+    right: 572px;
     width: 414px;
     height: 414px;
   }
@@ -44,7 +47,7 @@
 
 @media only screen and (min-width: 1280px) {
   .services-container::after {
-    top: 315px;
+    top: 230px;
     right: 1078px;
   }
 }

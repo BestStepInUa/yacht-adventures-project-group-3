@@ -285,3 +285,26 @@
     display: none;
   }
 }
+
+.back-to-up {
+  background-color: var(--light-grn-cl);
+  border: none;
+  border-radius: 8px;
+  width: 44px;
+  height: 44px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+@media only screen and (min-width: 768px) {
+  .back-to-up {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+.icon-arrow-up {
+  fill: var(--white-cl);
+}
