@@ -326,9 +326,6 @@
         margin-bottom: 48px;
     }
 }    
-.text-item {
-    
-}
 .price {
     color: var(--black-cl);
     font-size: 60px;
@@ -343,11 +340,6 @@
         
     }
 }
-@media only screen and (min-width: 768px) {
-    .price {
-        
-    }
-}
 .add-text {
     color: var(--black-cl);
     font-size: 18px;
@@ -357,12 +349,6 @@
 @media only screen and (max-width: 767px) {
     .add-text {
         font-size: 14px;
-        
-    }
-}
-@media only screen and (min-width: 768px) {
-    .add-text {
-        /*max-width: 208px;*/
         
     }
 }
