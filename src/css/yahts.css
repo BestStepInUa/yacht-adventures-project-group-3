@@ -1,16 +1,19 @@
 .yb-container {
   position: relative;
+}
+
+.yacht-section {
   padding-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
-  .yb-container {
+  .yacht-section {
     padding-bottom: 50px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .yb-container {
+  .yacht-section {
     padding-bottom: 82px;
   }
 }
@@ -188,6 +191,10 @@
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: -0.045em;
+  z-index: 1;
+}
+
+.form-yb-button {
   z-index: 1;
 }
 

@@ -110,28 +110,6 @@
   }
 }
 
-.adventures-list {
-  list-style: none;
-
-  padding: 0;
-
-  margin: 0;
-}
-
-@media only screen and (min-width: 768px) {
-  .adventures-list {
-    display: flex;
-    gap: 0;
-  }
-}
-
-/* @media only screen and (min-width: 1280px) {
-  .adventures-list {
-    display: flex;
-    gap: 32px;
-  }
-} */
-
 .adventures-list-item {
   padding: 24px 14px;
   border-radius: 24px;
@@ -167,17 +145,6 @@
     padding: 32px 32px;
   }
 }
-
-/* @media only screen and (max-width: 767px) {
-  .adventures-list-item:nth-last-child(-n + 2) {
-    display: none;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1279.98px) {
-  .adventures-list-item:nth-last-child(-n + 1) {
-    display: none;
-  }
-} */
 
 .adventures-list-item-title {
   text-align: center;
@@ -285,4 +252,27 @@
   .swiper-pagination {
     display: none;
   }
+}
+
+.back-to-up {
+  background-color: var(--light-grn-cl);
+  border: none;
+  border-radius: 8px;
+  width: 44px;
+  height: 44px;
+  z-index: 10;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .back-to-up {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+.icon-arrow-up {
+  fill: var(--white-cl);
 }
