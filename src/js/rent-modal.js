@@ -13,9 +13,9 @@ const phonePattern = /^\+?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
   };
 
   refs.openModalBtn.addEventListener("click", (event) => {
-    event.preventDefault(); 
+    event.preventDefault();
     validateInput();
-    toggleModal();
+    submitForm(event);
   });
 
   refs.closeModalBtn.addEventListener("click", toggleModal);
@@ -28,9 +28,27 @@ const phonePattern = /^\+?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
       }
     }
   }
-  
+
   function submitForm(event) {
-    event.preventDefault(); 
+    event.preventDefault();
+    if (isValid) {
+      // Your submission logic here (you can make an API call or any other actions needed)
+      // ...
+
+      // Play melody after submission
+      playMelody();
+
+      // Clear form inputs after successful submission
+      clearFormInputs();
+
+      // Show the modal or do any other actions you want after successful submission
+      toggleModal();
+    }
+  }
+
+  function clearFormInputs() {
+    const form = document.getElementById("rent-yacht-form");
+    form.reset();
   }
 
   function validateInput() {
@@ -77,6 +95,14 @@ const phonePattern = /^\+?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
     }
   }
 
+  function playMelody() {
+    // Replace this with your sound-playing logic for the melody
+    // For simplicity, we'll assume an HTML5 audio element with ID "clickSound"
+    const clickSound = document.getElementById("clickSound");
+    clickSound.currentTime = 0;
+    clickSound.play();
+  }
+
   function playSoundIfFieldsFilled() {
     const inputName = document.getElementById("user-name");
     const inputEmail = document.getElementById("user-email");
@@ -85,11 +111,5 @@ const phonePattern = /^\+?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
     const inputNameValue = inputName.value.trim();
     const inputEmailValue = inputEmail.value.trim();
     const inputPhoneValue = inputPhone.value.trim();
-
-    if (inputNameValue !== "" && inputEmailValue !== "" && inputPhoneValue !== "") {
-      const clickSound = document.getElementById("clickSound");
-      clickSound.currentTime = 0;
-      clickSound.play();
-    }
   }
 })();
