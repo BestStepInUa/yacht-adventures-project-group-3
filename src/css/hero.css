@@ -18,6 +18,14 @@
         gap: 218px;
      }
 }     
+.hero-block {
+    margin-bottom: 64px;
+}
+@media only screen and (max-width: 767px) {
+    .hero-block {
+            margin-bottom: 40px;
+    }
+}
 @media only screen and (max-width: 767px) {
     .hero-title {
         color: var(--white-cl);
@@ -100,10 +108,16 @@
         padding-bottom: 32px;
     }
 }
-.btn-block {
+.btn-block-list {
     display: flex;
-    align-items: flex-start;
-    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 11px;
+}
+@media only screen and (max-width: 767px) {
+    .btn-block-list {
+         gap: 8px;
+    }
 }
 .accent-btn {
     color: var(--white-cl);
@@ -116,7 +130,6 @@
     padding: 14px 28px;
     border: none;
     transition: background-color var(--main-transition-function);
-    
 }
 
 @media only screen and (max-width: 767px) {
@@ -156,49 +169,59 @@
 
 .card-set {
     position: relative;
-    width: 426px;
-    height: 598px;
-    margin-top: 64px;
+    min-width: 426px;
     background-image: url(/img/hero/img-6.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 20px;
+    
 }
 @media only screen and (max-width: 767px) {
      .card-set {  
-        width: 335px;
-        height: 427px;
+        min-width: 335px;
+        
         margin: 0 auto;
-        margin-top: 40px;
-        padding-bottom: 40px;
+     
     }    
 }
 @media only screen and (min-width: 768px) {
     .card-set {
-        padding-bottom: 50px;
+        max-width: 426px;
+        
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .card-set {
+        min-width: 426px;
+    
     }
 }
 .card-list {
     display: flex;
-}
-.card-client {
-    padding-left: 32px;
-    padding-bottom: 111px;
+    margin-left: 37px;
+    margin-right: 37px;
+    margin-bottom: 64px;
+
 }
 @media only screen and (max-width: 767px) {
-    .card-client {
-        padding-left: 24px;
-        padding-bottom: 52px;
-    }       
+    .card-list {
+    
+    }
 }
+.card-client {
+    
+}
+
+
 
 @media only screen and (max-width: 767px) {
     .card-item {
-        padding-top: 24px;
+        
     }
 }
 .client-img {
+    width: 56px;
     position: absolute;
     border-radius: 56px;
     border: 2px solid var(--light-grn-cl);
@@ -246,7 +269,6 @@
 @media only screen and (max-width: 767px) {
     .client-img {
         width: 48px;
-        height: 48px;
         border-radius: 48px;
     }
 }
@@ -257,29 +279,45 @@
     line-height: 1.1;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    padding-top: 50px;
+    margin-top: 99px;
+    margin-left: 32px;
     
+}
+@media only screen and (max-width: 767px) {
+    .client-img {
+        margin-top: 85px;
+        margin-left: 24px;
+    }
 }
 
 .card-img {
-    max-width: 378px;
-    padding-bottom: 32px;
-    padding-left: 24px;
-    padding-right: 24px;
+    margin-top: 152px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 37px;
 }
 @media only screen and (max-width: 767px) {
     .card-img {
-       max-width: 287px;
-       padding-top: 32px;
-       padding-bottom: 18px;
+       min-width: 287px;
+    
     
     }
 }
 @media only screen and (min-width: 768px) {
     .card-img {
-        max-width: 378px;
-        padding-top: 40px;
-        padding-bottom: 22px;
+        width: 378px;
+        margin-top: 225px;
+        margin-bottom: 14px;
+        
+        
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .card-img {
+        margin-top: 152px;
+       
+
+
     }
 }
 .text-list {
@@ -287,26 +325,36 @@
     justify-content: center;
     align-items: center;
     gap: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 64px; 
     
 }
-
+@media only screen and (max-width: 767px) {
+    .text-list {
+        margin-bottom: 48px;
+    }
+}    
+.text-item {
+    
+}
 .price {
-    padding-left: 37px;
     color: var(--black-cl);
     font-size: 60px;
     line-height: 1.1;
     letter-spacing: -0.04em;
     text-transform: uppercase;
+    
 }
 @media only screen and (max-width: 767px) {
     .price {
         font-size: 46px;
-        padding-left: 24px;
+        
     }
 }
 @media only screen and (min-width: 768px) {
     .price {
-        padding-left: 37px;
+        
     }
 }
 .add-text {
@@ -318,13 +366,13 @@
 @media only screen and (max-width: 767px) {
     .add-text {
         font-size: 14px;
-        padding-right: 24px;
+        
     }
 }
 @media only screen and (min-width: 768px) {
     .add-text {
         /*max-width: 208px;*/
-        padding-right: 37px;
+        
     }
 }
 .owner-img {
