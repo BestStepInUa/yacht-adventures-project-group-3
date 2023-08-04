@@ -17,6 +17,10 @@
   }
 }
 
+.adventures-title-container {
+  margin-bottom: 40px;
+}
+
 @media only screen and (min-width: 768px) {
   .adventures-title-container {
     margin-bottom: 64px;
@@ -90,8 +94,6 @@
   letter-spacing: -0.02em;
 
   margin: 0;
-
-  margin-bottom: 40px;
 }
 @media only screen and (min-width: 375px) {
   .adventures-text {
@@ -283,22 +285,4 @@
   .swiper-pagination {
     display: none;
   }
-}
-
-.btn-up {
-  background-color: #93abae;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-
-  width: 44px;
-  height: 44px;
-
-  border: inherit;
-  border-radius: 32%;
-}
-
-.btn-icon-up {
-  fill: var(--white-cl);
-  stroke: var(--white-cl);
 }
